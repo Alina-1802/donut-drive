@@ -24,4 +24,12 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(0, Input.GetAxis("Horizontal") * angle * Time.deltaTime, 0);
         transform.Translate(movement);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Location"))
+        {
+            Debug.Log("Location found");
+        }
+    }
 }
