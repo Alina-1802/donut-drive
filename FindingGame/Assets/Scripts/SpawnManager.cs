@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnLocations()
     {
-        if (playerController.isLocationFound)
+        if (playerController.GetIsLocationFound())
         {
             if (currentLocationsNumber > 0)
             {
@@ -53,7 +53,7 @@ public class SpawnManager : MonoBehaviour
                 Debug.Log("You won!");
             }
 
-            playerController.isLocationFound = false;
+            playerController.SetIsLocationFound(false);
         }
     }
 }
