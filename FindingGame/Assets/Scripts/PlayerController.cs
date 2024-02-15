@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float angle = 150.0f;
 
+    public bool isLocationFound = false;
+
     void Start()
     {
         
@@ -25,10 +27,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if(collision.gameObject.CompareTag("Location"))
+        if(other.gameObject.CompareTag("Location"))
         {
+            isLocationFound = true;
+            Destroy(other.gameObject);
             Debug.Log("Location found");
         }
     }
