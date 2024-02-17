@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 
     Vector3[] spawnLocationsPositions = new Vector3[locationsNumber];
 
-    bool isGameWon = false;
+    private bool isGameWon = false;
 
     void Start()
     {
@@ -55,5 +55,10 @@ public class SpawnManager : MonoBehaviour
 
             playerController.SetIsLocationFound(false);
         }
+    }
+
+    public bool GetIsGameWon()
+    {
+        return isGameWon;
     }
 }
