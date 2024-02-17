@@ -6,14 +6,14 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject locationPrefab;
 
-    private static int locationsNumber = 5;
+    private const int locationsNumber = 5;
     private int currentLocationsNumber; // how many left to spawn
 
     private PlayerController playerController;
 
     Vector3[] spawnLocationsPositions = new Vector3[locationsNumber];
 
-    private bool isGameWon = false;
+    private bool isLevelCompleted = false;
 
     void Start()
     {
@@ -49,16 +49,15 @@ public class SpawnManager : MonoBehaviour
             }
             else if (currentLocationsNumber == 0)
             {
-                isGameWon = true;
-                Debug.Log("You won!");
+                isLevelCompleted = true;
             }
 
             playerController.SetIsLocationFound(false);
         }
     }
 
-    public bool GetIsGameWon()
+    public bool GetIsLevelCompleted()
     {
-        return isGameWon;
+        return isLevelCompleted;
     }
 }
