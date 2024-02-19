@@ -10,14 +10,19 @@ public class PlayerController : MonoBehaviour
 
     private bool isLocationFound = false;
 
+    LevelManager levelManager;
+
     void Start()
     {
-        
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();   
     }
 
     void Update()
     {
-        MovePlayer();
+        if(levelManager.GetIsGameWon() == null)
+        {
+            MovePlayer();
+        }
     }
 
     private void MovePlayer()

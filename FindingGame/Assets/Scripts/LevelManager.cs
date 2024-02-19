@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     private bool? isLevelWon = null;
     private bool isLevelCompleted;
 
-    private const float levelTime = 5.0f;
+    public float levelTime = 20.0f; // temporairly public
     private float currentTime = 0.0f;
 
     private SpawnManager spawnManager;
@@ -20,20 +20,42 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        isLevelCompleted = spawnManager.GetIsLevelCompleted();
+        if(isLevelWon == null)
+        {
+            UpdateTime();
+            SetLevelState(); 
+        }
+    }
 
+    public float GetCurrentTime()
+    {
+        return currentTime;
+    }
+
+    private void UpdateTime()
+    {
         currentTime = Time.time;
         isTimeUp = (currentTime >= levelTime);
+    }
+
+    private void SetLevelState()
+    {
+        isLevelCompleted = spawnManager.GetIsLevelCompleted();
 
         if (isTimeUp && !isLevelCompleted)
         {
             isLevelWon = false;
             Debug.Log("You lost!");
         }
-        else if(!isTimeUp && isLevelCompleted)
+        else if (!isTimeUp && isLevelCompleted)
         {
-            isLevelWon = true; 
+            isLevelWon = true;
             Debug.Log("You won!");
         }
+    }
+
+    public bool? GetIsGameWon()
+    {
+        return isLevelWon;
     }
 }

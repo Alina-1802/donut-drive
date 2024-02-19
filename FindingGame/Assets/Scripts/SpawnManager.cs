@@ -8,6 +8,7 @@ public class SpawnManager : MonoBehaviour
 
     private const int locationsNumber = 5;
     private int currentLocationsNumber; // how many left to spawn
+    private int foundLocationsNumber;
 
     private PlayerController playerController;
 
@@ -41,6 +42,9 @@ public class SpawnManager : MonoBehaviour
     {
         if (playerController.GetIsLocationFound())
         {
+            foundLocationsNumber++;
+            Debug.Log(foundLocationsNumber);
+
             if (currentLocationsNumber > 0)
             {
                 int i = locationsNumber - currentLocationsNumber;
@@ -59,5 +63,10 @@ public class SpawnManager : MonoBehaviour
     public bool GetIsLevelCompleted()
     {
         return isLevelCompleted;
+    }
+
+    public int GetLeftLocationsNumber()
+    {
+        return locationsNumber - foundLocationsNumber;
     }
 }
