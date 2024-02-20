@@ -6,8 +6,8 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
     public TextMeshProUGUI timer;
-    public GameObject gameWon;
-    public GameObject gameLost;
+    public GameObject levelWon;
+    public GameObject levelLost;
     public TextMeshProUGUI locationsNumber;
 
     private LevelManager levelManager;
@@ -18,8 +18,8 @@ public class UI : MonoBehaviour
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
 
-        gameWon.SetActive(false);
-        gameLost.SetActive(false);
+        levelWon.SetActive(false);
+        levelLost.SetActive(false);
     }
 
     void Update()
@@ -45,11 +45,11 @@ public class UI : MonoBehaviour
     {
         if(levelManager.GetIsGameWon() == true)
         {
-            gameWon.SetActive(true);
+            levelWon.SetActive(true);
         }
         else if(levelManager.GetIsGameWon() == false)
         {
-            gameLost.SetActive(true);
+            levelLost.SetActive(true);
         }
     }
 
