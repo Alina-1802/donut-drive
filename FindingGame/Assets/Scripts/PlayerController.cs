@@ -59,8 +59,6 @@ public class PlayerController : MonoBehaviour
         {
             Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             rb.velocity = Vector3.zero;
-
-            Debug.Log("kolizja z czyms innym");
         }
     }
     

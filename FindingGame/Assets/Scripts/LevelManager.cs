@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     private bool? isLevelWon = null;
     private bool isLevelCompleted;
 
-    public float levelTime = 50.0f; // temporairly public
+    private float levelTime = 60.0f;
     private float currentTime = 0.0f;
 
     private SpawnManager spawnManager;
