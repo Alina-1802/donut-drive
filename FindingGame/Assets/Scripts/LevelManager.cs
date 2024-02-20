@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     private bool? isLevelWon = null;
     private bool isLevelCompleted;
 
-    public float levelTime = 20.0f; // temporairly public
+    public float levelTime = 50.0f; // temporairly public
     private float currentTime = 0.0f;
 
     private SpawnManager spawnManager;
@@ -30,6 +30,11 @@ public class LevelManager : MonoBehaviour
     public float GetCurrentTime()
     {
         return currentTime;
+    }
+
+    public float GetLevelTime()
+    {
+        return levelTime;
     }
 
     private void UpdateTime()

@@ -225,3 +225,535 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 493.350441 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building Sky_small_color01.fbx
+  artifactKey: Guid(47a83e21f77098142be8ace3346172ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building Sky_small_color01.fbx using Guid(47a83e21f77098142be8ace3346172ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6916f03b40afa2d584ed4b1aa857f0e0') in 0.140530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Antenna.fbx
+  artifactKey: Guid(cbdf54dd7a2ad4245a1dd6ccba9cc813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Antenna.fbx using Guid(cbdf54dd7a2ad4245a1dd6ccba9cc813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03fb4878fd92696b93f499745fdfc66') in 0.032019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Bench_2.fbx
+  artifactKey: Guid(fb901750ec5d32f46ad8179f6fb99b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Bench_2.fbx using Guid(fb901750ec5d32f46ad8179f6fb99b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582adae290f822234b0f684c0ee6e120') in 0.018286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Bakery.fbx
+  artifactKey: Guid(ea9803764c3c1e74b83f6dda1cfa0885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Bakery.fbx using Guid(ea9803764c3c1e74b83f6dda1cfa0885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42483aa81012615cfc9e9c2b230c8ae') in 0.019650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_House Floor.fbx
+  artifactKey: Guid(c7327ddbb4f55824eb37461c53fdd55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_House Floor.fbx using Guid(c7327ddbb4f55824eb37461c53fdd55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfdcf599edaf926d8bf763bde22be03') in 0.018868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_House_01_color01.fbx
+  artifactKey: Guid(6fddb771ca917c6498310bcc16a817e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_House_01_color01.fbx using Guid(6fddb771ca917c6498310bcc16a817e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d46df18f305415ac1bdea8797c67f02') in 0.018477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Tile.fbx
+  artifactKey: Guid(fbb8756519c039b4f804c77c5e3293f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Tile.fbx using Guid(fbb8756519c039b4f804c77c5e3293f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d5d9d00899b3f02f47db733d2980dc') in 0.017535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_03.fbx
+  artifactKey: Guid(878eb4575d3db2143bff9ebf5c266974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_03.fbx using Guid(878eb4575d3db2143bff9ebf5c266974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5695a4b8c3cfc99ccf743222783a4c2') in 0.018030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Bus Stop.fbx
+  artifactKey: Guid(9e6e51a480e2d6f43878a5d789bd8704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Bus Stop.fbx using Guid(9e6e51a480e2d6f43878a5d789bd8704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7af9ea62420923ef050e62589fb5a9') in 0.018620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Fruits  Shop.fbx
+  artifactKey: Guid(0f5d2e6533e3fb44fbd094c173ba3f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Fruits  Shop.fbx using Guid(0f5d2e6533e3fb44fbd094c173ba3f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ed87c960d197b9fe208bbb5b1ffdee') in 0.019039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Super Market.fbx
+  artifactKey: Guid(fad753de86ef7464790653995e61e7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Super Market.fbx using Guid(fad753de86ef7464790653995e61e7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e49ef16c204af4799fb058f30a493b') in 0.018187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Stadium.fbx
+  artifactKey: Guid(8d799610519b6274c8bb35a7fd95f5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Stadium.fbx using Guid(8d799610519b6274c8bb35a7fd95f5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abaa3316b5604f1180757b4f35cad8d') in 0.021092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof prop air.fbx
+  artifactKey: Guid(dccc704d9a70b064b8d29fe27fcbc17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof prop air.fbx using Guid(dccc704d9a70b064b8d29fe27fcbc17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fcb18378d0a30a3f07f40edb78e37e') in 0.018051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_01.fbx
+  artifactKey: Guid(736724502c2975348b2f19e5e99e1ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_01.fbx using Guid(736724502c2975348b2f19e5e99e1ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a29194d6fb3fb938f3252e72bdd8d3c') in 0.019327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Books Shop.fbx
+  artifactKey: Guid(2c2dcc3c02224de46b4813f3110dca1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Books Shop.fbx using Guid(2c2dcc3c02224de46b4813f3110dca1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b99c10711e292475e8929eeac748c1') in 0.019797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Windmill.fbx
+  artifactKey: Guid(2605c818ea0c2df4092b898402e71aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Windmill.fbx using Guid(2605c818ea0c2df4092b898402e71aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4858c39641fd589ac652969833fbe8') in 0.027576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Solar Panel.fbx
+  artifactKey: Guid(033999da19ac9074d84c50be8da3917e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Solar Panel.fbx using Guid(033999da19ac9074d84c50be8da3917e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0737423e2e7136b2eff956a1f90bdd') in 0.020011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Pot Bush_small.fbx
+  artifactKey: Guid(2c5a85095f7a19d479cf428b0ed03e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Pot Bush_small.fbx using Guid(2c5a85095f7a19d479cf428b0ed03e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cd11696bade5cf384d335632425c95') in 0.021811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_House_04_color01.fbx
+  artifactKey: Guid(600c276288a996744bd73e53635eba4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_House_04_color01.fbx using Guid(600c276288a996744bd73e53635eba4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb55d69784370821f267811eae106077') in 0.025527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Bar.fbx
+  artifactKey: Guid(71baf848e76aefd4e9d729d470d2081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Bar.fbx using Guid(71baf848e76aefd4e9d729d470d2081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f986087d371de08194078d9180bfccf') in 0.023612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Fast Food.fbx
+  artifactKey: Guid(4ddf9dbec6534a14a9612193ee06f4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Fast Food.fbx using Guid(4ddf9dbec6534a14a9612193ee06f4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99721fba3d50bb2acea783dd0fbb0766') in 0.022319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Helipad.fbx
+  artifactKey: Guid(b602d657274d2c24b88fe0f3fa83287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Roof Helipad.fbx using Guid(b602d657274d2c24b88fe0f3fa83287b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766ea26b909a74aa0f677302003d6861') in 0.024062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Street Light.fbx
+  artifactKey: Guid(ab761d05302615348a9aed34ccd58dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Street Light.fbx using Guid(ab761d05302615348a9aed34ccd58dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fe90dc1712617338c53495118e13e9') in 0.023027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Bench_1.fbx
+  artifactKey: Guid(069faa75324807b4d99f059f6622d7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Bench_1.fbx using Guid(069faa75324807b4d99f059f6622d7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721455717eb0b881efe63f2c6b8e42bf') in 0.022120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Props_Hydrant.fbx
+  artifactKey: Guid(aa7a6aea7692eb346af29dcc7e73ee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Props_Hydrant.fbx using Guid(aa7a6aea7692eb346af29dcc7e73ee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb765343407da254355f2fa5594530f7') in 0.024561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Restaurant.fbx
+  artifactKey: Guid(efc62b24c745a1f469c0d1453dfb41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Restaurant.fbx using Guid(efc62b24c745a1f469c0d1453dfb41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef32a4febb1437e7e52aa12be83b5fd') in 0.025057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Tile Small.fbx
+  artifactKey: Guid(3163f2c03b1dac0419001ac5e42f8c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Tile Small.fbx using Guid(3163f2c03b1dac0419001ac5e42f8c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca95a67aa2fdeb9a6409905f0a163e4b') in 0.022823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Chicken Shop.fbx
+  artifactKey: Guid(83f25ee3b9f68a04faad68fee3d27b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Chicken Shop.fbx using Guid(83f25ee3b9f68a04faad68fee3d27b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd13a2392795b6fb3f238d91c21cb2a') in 0.021377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Gas Station.fbx
+  artifactKey: Guid(25449c1a4c4ca004ead70b6c0889695b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Gas Station.fbx using Guid(25449c1a4c4ca004ead70b6c0889695b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0da629be63fbccedfea71ffa09a956') in 0.021509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_02.fbx
+  artifactKey: Guid(f65d01a310db1b74582d89cdcb63fe4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Bush_02.fbx using Guid(f65d01a310db1b74582d89cdcb63fe4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f097fb654b25c98c10b170a68747aa9') in 0.020770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Building_Factory.fbx
+  artifactKey: Guid(932be02d2912c394786d8ec1d2007f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Building_Factory.fbx using Guid(932be02d2912c394786d8ec1d2007f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50189a76f29be8039ad6af262f252ad') in 0.022606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Bar.fbx
+  artifactKey: Guid(60550932e430af1479cebb05e97130ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Natures_Grass Bar.fbx using Guid(60550932e430af1479cebb05e97130ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10a4ecf209292139e11737a9be52d98') in 0.018754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Models/Road Concrete Tile Small.fbx
+  artifactKey: Guid(d4f2e69b8ed6aed4885772810d0f4a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Models/Road Concrete Tile Small.fbx using Guid(d4f2e69b8ed6aed4885772810d0f4a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e93ba2b72786baf607e40ed27208a1') in 0.024271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.010161 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building Sky_big_color03.mat
+  artifactKey: Guid(a1a61be9dd7e91b4faec2c4eb7ca4e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building Sky_big_color03.mat using Guid(a1a61be9dd7e91b4faec2c4eb7ca4e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12e616c397c516b18767c549e6136dd') in 0.186924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Container_color02.mat
+  artifactKey: Guid(28c4d6fc3a6598a49bd5947f62155562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Container_color02.mat using Guid(28c4d6fc3a6598a49bd5947f62155562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53728fe0f40bf34e732b125ec5bbd18e') in 0.017666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Props_BillBoard_small.mat
+  artifactKey: Guid(dcbee53a8041c594aaf20d616c6ed33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Props_BillBoard_small.mat using Guid(dcbee53a8041c594aaf20d616c6ed33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efff838567ce9fe05cbdd3fba4657d5') in 0.019382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Gas Station.mat
+  artifactKey: Guid(5008df5fba3101c4c81e4cf6b008c663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Gas Station.mat using Guid(5008df5fba3101c4c81e4cf6b008c663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e220249c11482ec0818bb2ffb9e4fe60') in 0.019439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Bus_color01.mat
+  artifactKey: Guid(2851e6469fffc7640a0b1333a9b2519f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Bus_color01.mat using Guid(2851e6469fffc7640a0b1333a9b2519f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d3d45d5269a198bc8997cebd065446') in 0.020137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_House_02_color03.mat
+  artifactKey: Guid(c622c6f6cb906dd47b5fd1368346e0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_House_02_color03.mat using Guid(c622c6f6cb906dd47b5fd1368346e0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301a269f7ead3ad44cd9487a4227ef36') in 0.016021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Drug Store.mat
+  artifactKey: Guid(f9332e9be9cda3a4e8544e41a0366b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Drug Store.mat using Guid(f9332e9be9cda3a4e8544e41a0366b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6702ba66807799100495b3c78aee14') in 0.015069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Ambulance.mat
+  artifactKey: Guid(fded615538aced440887a3468715a826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Ambulance.mat using Guid(fded615538aced440887a3468715a826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9c2f70975fd0b694e65be295b71fc2') in 0.019636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Fast Food.mat
+  artifactKey: Guid(0c04fafcb420315419fdbbeb0fb78464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Fast Food.mat using Guid(0c04fafcb420315419fdbbeb0fb78464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f3485c35f33e7f75014c38efad3153b') in 0.015444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Factory.mat
+  artifactKey: Guid(abc266de8c01de040bfa48da3f006d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Factory.mat using Guid(abc266de8c01de040bfa48da3f006d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f13241182f17f6d3acd948d8b9ed1b7') in 0.017040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Pick up Truck_color03.mat
+  artifactKey: Guid(f3d0a94161d16b9449517d5d8f357098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Pick up Truck_color03.mat using Guid(f3d0a94161d16b9449517d5d8f357098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ca4e1416397c1ddef87a7fbbd601c7') in 0.018564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Road Concrete Tile.mat
+  artifactKey: Guid(791087fbdef01f44fb204ef3dc5e6db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Road Concrete Tile.mat using Guid(791087fbdef01f44fb204ef3dc5e6db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1cbcc3930a60316338871086e61209') in 0.016987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Gift Shop.mat
+  artifactKey: Guid(bf630e064503ad541ab39df076952029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Gift Shop.mat using Guid(bf630e064503ad541ab39df076952029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e3773b563901aceb38cd18694fb99a') in 0.016273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building Sky_small_color03.mat
+  artifactKey: Guid(8f1cbf7d8b46f0c44ab5e32bfc3041a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building Sky_small_color03.mat using Guid(8f1cbf7d8b46f0c44ab5e32bfc3041a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7452c65b60bf05f1210fb3f34e40f6') in 0.020556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Building_Residential_color01.mat
+  artifactKey: Guid(2016355b121a1d141a5a696a5e1a3204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Building_Residential_color01.mat using Guid(2016355b121a1d141a5a696a5e1a3204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df032c1909df3ef089bd63a4c3e7c3d') in 0.017681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Pick up Truck_color01.mat
+  artifactKey: Guid(3ec7be87852e30f49a754a666cd49e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Pick up Truck_color01.mat using Guid(3ec7be87852e30f49a754a666cd49e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6adb15c1d5173c577549fddb8a4187ff') in 0.019669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Car_color01.mat
+  artifactKey: Guid(c55cd13c983151f488686d50353a716f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Car_color01.mat using Guid(c55cd13c983151f488686d50353a716f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3373afde0791efad2f158f5aee2e157') in 0.016627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.069056 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_BillBoard_large.prefab
+  artifactKey: Guid(653e28c8a1ae11240a6cdaac2f9ee8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_BillBoard_large.prefab using Guid(653e28c8a1ae11240a6cdaac2f9ee8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e626b6cfbb106da564c2ae650d1a8c') in 0.020318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Traffic Signal_big.prefab
+  artifactKey: Guid(d4cfcf659200d7548b90a5580c3ab18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Traffic Signal_big.prefab using Guid(d4cfcf659200d7548b90a5580c3ab18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb7603612570506d4dcdad2a52ba07f') in 0.030641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Roof_prop.prefab
+  artifactKey: Guid(918397a7e0523114ea408fc4eb8ca157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Roof_prop.prefab using Guid(918397a7e0523114ea408fc4eb8ca157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6acd265b3d0f9ed89e439eabc6f0b7') in 0.015982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Coffee shop chair.prefab
+  artifactKey: Guid(97229e82747352a43b48688ec573f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Coffee shop chair.prefab using Guid(97229e82747352a43b48688ec573f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802595e6f084268e78d11adaea998230') in 0.016623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Traffic Signal_small.prefab
+  artifactKey: Guid(2857b989c828950448ead142ca28e4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Traffic Signal_small.prefab using Guid(2857b989c828950448ead142ca28e4a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bfd681b2278b0c187ef12c4adecd030') in 0.016260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Roof prop air.prefab
+  artifactKey: Guid(120449a04911a924ca1239be382ff0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Props/Props_Roof prop air.prefab using Guid(120449a04911a924ca1239be382ff0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d691e45329eeec0af9ddea2c5fc8c4') in 0.020305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.911055 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building Sky_big_color03.prefab
+  artifactKey: Guid(1d3fc70685d97b748ac1264d8da02551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building Sky_big_color03.prefab using Guid(1d3fc70685d97b748ac1264d8da02551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ebbfa6f9271a9774eaae8ff71bef5e') in 0.024225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Chicken Shop.prefab
+  artifactKey: Guid(8b3eca4c34b9e1148a3c4d42a48dd5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Chicken Shop.prefab using Guid(8b3eca4c34b9e1148a3c4d42a48dd5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce61b275c8c6ecb6bcd98f0a58538cf3') in 0.019796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Fruits  Shop.prefab
+  artifactKey: Guid(931fa17f0ab17504bbfc8903e54e6a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Fruits  Shop.prefab using Guid(931fa17f0ab17504bbfc8903e54e6a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f8d556ecb7af01dd909c07bad84685') in 0.017630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Gas Station.prefab
+  artifactKey: Guid(260808cfd9b21994d8c3007a7bc9934c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Gas Station.prefab using Guid(260808cfd9b21994d8c3007a7bc9934c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e818537dc44f0e22ec95cebd77a2bf') in 0.019056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Restaurant.prefab
+  artifactKey: Guid(bc532b78ce09f234ea01da2deecfe035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Restaurant.prefab using Guid(bc532b78ce09f234ea01da2deecfe035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7a192c7d019e820e943564d5b621dc') in 0.024139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Shoes Shop.prefab
+  artifactKey: Guid(52f969fb493f02248ba2e0ab07d6d81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Shoes Shop.prefab using Guid(52f969fb493f02248ba2e0ab07d6d81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7492ba7a6d582a29b2857ea01edd7d22') in 0.016751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building Sky_small_color02.prefab
+  artifactKey: Guid(cc0981408e7c8db4f9f80a57938fd5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building Sky_small_color02.prefab using Guid(cc0981408e7c8db4f9f80a57938fd5e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea250a784a922b895a51ec966314378') in 0.019654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_House_04_color02.prefab
+  artifactKey: Guid(10ba41f0223c3104bad126af2b380971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_House_04_color02.prefab using Guid(10ba41f0223c3104bad126af2b380971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dca96d76c2a61a71949cce617a4871') in 0.019636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_House_02_color03.prefab
+  artifactKey: Guid(3a0bc997d3424474696ad8d2e7d684ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_House_02_color03.prefab using Guid(3a0bc997d3424474696ad8d2e7d684ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d49ea708f6aa1c696124bbe3e1e9db') in 0.017775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Auto Service.prefab
+  artifactKey: Guid(121f662ea65e2cf40a50c66470757a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Buildings/Building_Auto Service.prefab using Guid(121f662ea65e2cf40a50c66470757a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba98388d97fbbd334667069b9175d454') in 0.016919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.339868 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Bush_02.prefab
+  artifactKey: Guid(f75f232634166cc459a69e7fd7a30880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Bush_02.prefab using Guid(f75f232634166cc459a69e7fd7a30880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a843a2799f158b8ad7f36581e7dd289e') in 0.030944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Cube Tree.prefab
+  artifactKey: Guid(8b680e0f7699a254c84ed6737b7eb53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Cube Tree.prefab using Guid(8b680e0f7699a254c84ed6737b7eb53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072a9e441d82db45f972af090a9ad63c') in 0.027034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Fir Tree.prefab
+  artifactKey: Guid(2509cc5763ca17f4598bf61fd585a93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Fir Tree.prefab using Guid(2509cc5763ca17f4598bf61fd585a93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6e0c8dd87bc75dde0086991d0bf0e6') in 0.015327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Grass Tile Small.prefab
+  artifactKey: Guid(1b0084fb56aeb6e4e90f88a0def84cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Prefab/Natures/Natures_Grass Tile Small.prefab using Guid(1b0084fb56aeb6e4e90f88a0def84cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbbed891d5fa36e28fadc6630bf687a6') in 0.008400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.910978 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building Sky_big_color03.png
+  artifactKey: Guid(68678103389a4c1458454df2673310fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building Sky_big_color03.png using Guid(68678103389a4c1458454df2673310fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebff3569dd4d6b8f4ca55e0b237d24e') in 0.070045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Pizza.png
+  artifactKey: Guid(0cf2b5e2d8e8aba41b18787cd9399b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Pizza.png using Guid(0cf2b5e2d8e8aba41b18787cd9399b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92093f8c530f04ffc443f8b00145ddef') in 0.018505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_2.png
+  artifactKey: Guid(26083320078152146942aeac058c39ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_2.png using Guid(26083320078152146942aeac058c39ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4059666618cbfc3d7dbc6a09a1b8883') in 0.018053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Fast Food.png
+  artifactKey: Guid(06b4c0119aac8524ca9230c7fabe315b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Fast Food.png using Guid(06b4c0119aac8524ca9230c7fabe315b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045f1f6482ccdc76ac3d0764104b0fc1') in 0.016737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Super Market.png
+  artifactKey: Guid(36aaf6a30be16934c8ba7886a9be97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Super Market.png using Guid(36aaf6a30be16934c8ba7886a9be97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd365265bc2425a23810cca04cc159593') in 0.014778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_3.png
+  artifactKey: Guid(8eac3f6a5408bf54683eca8076ada1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_3.png using Guid(8eac3f6a5408bf54683eca8076ada1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd07131c5bfcececfd1bb684bc3e03a') in 0.018418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_02_color01.png
+  artifactKey: Guid(de3664eefb900b74fbdeb9a2a87c0cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_02_color01.png using Guid(de3664eefb900b74fbdeb9a2a87c0cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318f50fae7503fc1e53ba9e42b5cae39') in 0.015497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_04_color03.png
+  artifactKey: Guid(6494dbf22a7afbd4f8724ced6070af97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_04_color03.png using Guid(6494dbf22a7afbd4f8724ced6070af97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895cdb9004c4144abb2dcf0123decaaa') in 0.019095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Pick up Truck_1.png
+  artifactKey: Guid(d2f1fa2ac23a17e4b9038197903f57ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Pick up Truck_1.png using Guid(d2f1fa2ac23a17e4b9038197903f57ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2686f274e702464ced97a6629f6bc3') in 0.018479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Stadium.png
+  artifactKey: Guid(96eac2b1cb544804b8e1ddc0c8c7e73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Stadium.png using Guid(96eac2b1cb544804b8e1ddc0c8c7e73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcc88871066c41bfd0b92fdedcf3005') in 0.015422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Residential_color02.png
+  artifactKey: Guid(84b90ff10d36543418f423d8e1f20c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Residential_color02.png using Guid(84b90ff10d36543418f423d8e1f20c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726b7b631bfbec7778df787054ecc6fd') in 0.017224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_1.png
+  artifactKey: Guid(65b68621c76dea14ca7efad04a2716f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Container_1.png using Guid(65b68621c76dea14ca7efad04a2716f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d1cdc175ceafc65505602460757d2c') in 0.015650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Car_3.png
+  artifactKey: Guid(784073a23c23d054e9378970d2771d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Car_3.png using Guid(784073a23c23d054e9378970d2771d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cbfbd445ceaecb9f1ec9c5766d17b5') in 0.020077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_02_color03.png
+  artifactKey: Guid(c8eafda441adc3e46951fc68b9da655a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_02_color03.png using Guid(c8eafda441adc3e46951fc68b9da655a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6029d259edc08c2e679ebbad4f2f30eb') in 0.016163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_03_color03.png
+  artifactKey: Guid(e7e8298ecf8f3ff4c8c778c73cbed0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_House_03_color03.png using Guid(e7e8298ecf8f3ff4c8c778c73cbed0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6d3ebb76aa2541b9af0327f5411672') in 0.020154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Building_Bar.png
+  artifactKey: Guid(dcf28aa94c297d441b5bb2e655c5b1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Building_Bar.png using Guid(dcf28aa94c297d441b5bb2e655c5b1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b0289d77550aa73c4c405a34a8eee4') in 0.018127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.750834 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Truck_1.png
+  artifactKey: Guid(e595569ca689c8c4ead585e8746e4fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Textures/Vehicle_Truck_1.png using Guid(e595569ca689c8c4ead585e8746e4fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07446605180fc37895624453a81c9bed') in 0.024875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.344488 seconds.
+  path: Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Taxi.mat
+  artifactKey: Guid(24c20333a6b79874298a79151051f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePoly City - Low Poly Assets/Materials/Vehicle_Taxi.mat using Guid(24c20333a6b79874298a79151051f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a614b4e544bf57b986f4a6bc9c05f4c5') in 0.019506 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

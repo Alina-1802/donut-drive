@@ -36,7 +36,9 @@ public class UI : MonoBehaviour
     private void ShowTimer()
     {
         float currentTime = levelManager.GetCurrentTime();
-        timer.text = currentTime.ToString("F2") + " s";
+        float levelTime = levelManager.GetLevelTime();
+        float leftTime = levelTime - currentTime;
+        timer.text = leftTime.ToString("F2") + " s";
     }
 
     private void ShowGameOver()

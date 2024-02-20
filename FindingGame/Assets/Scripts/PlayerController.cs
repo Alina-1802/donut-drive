@@ -27,9 +27,24 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
-        Vector3 movement = new Vector3(0,0,Input.GetAxis("Vertical") * speed * Time.deltaTime);
+/*
+        Vector3 movement = new Vector3(0, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
         transform.Rotate(0, Input.GetAxis("Horizontal") * angle * Time.deltaTime, 0);
         transform.Translate(movement);
+*/
+        Rigidbody rb = GetComponent<Rigidbody>();
+
+        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxis("Horizontal");
+
+        Vector3 movement = new Vector3(0f, 0f, moveVertical) * speed * Time.deltaTime * 30000;
+        Quaternion deltaRotation = Quaternion.Euler(new Vector3(0, moveHorizontal * angle * Time.deltaTime, 0));
+
+        rb.AddRelativeForce(movement);
+        rb.MoveRotation(rb.rotation * deltaRotation);
+
+        rb.drag = 5f; 
+        rb.angularDrag = 5f;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -39,6 +54,13 @@ public class PlayerController : MonoBehaviour
             isLocationFound = true;
             Destroy(other.gameObject);
             Debug.Log("Location found");
+        }
+        else if (!other.gameObject.CompareTag("Ground"))
+        {
+            Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+            rb.velocity = Vector3.zero;
+
+            Debug.Log("kolizja z czyms innym");
         }
     }
     
