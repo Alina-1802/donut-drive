@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class UI : MonoBehaviour
     public GameObject levelWon;
     public GameObject levelLost;
     public TextMeshProUGUI locationsNumber;
+    public GameObject retryButton;
+    public GameObject nextLevelbutton;
 
     private LevelManager levelManager;
     private SpawnManager spawnManager;
@@ -20,6 +24,9 @@ public class UI : MonoBehaviour
 
         levelWon.SetActive(false);
         levelLost.SetActive(false);
+
+        nextLevelbutton.SetActive(false);
+        retryButton.SetActive(false);
     }
 
     void Update()
@@ -30,6 +37,16 @@ public class UI : MonoBehaviour
         if (levelManager.GetIsGameWon() != null)
         {
             ShowGameOver();
+
+            if(levelManager.GetIsGameWon() == true)
+            {
+                nextLevelbutton.SetActive(true);
+                retryButton.SetActive(true);
+            }
+            else if(levelManager.GetIsGameWon() == false)
+            {
+                retryButton.SetActive(true);
+            }
         }
     }
 
@@ -57,5 +74,15 @@ public class UI : MonoBehaviour
     {
         int leftLocationsNumber = spawnManager.GetLeftLocationsNumber();
         locationsNumber.text = leftLocationsNumber.ToString();
+    }
+
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void PlayNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

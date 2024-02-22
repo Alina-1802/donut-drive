@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 {
     private bool isTimeUp = false;
     private bool? isLevelWon = null;
-    private bool isLevelCompleted;
+    private bool isLevelCompleted = false;
 
     public float levelTime = 60.0f;
     private float currentTime = 0.0f;
@@ -16,6 +16,13 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+
+        isTimeUp = false;
+        isLevelWon = null;
+        isLevelCompleted = false;
+
+        levelTime = 60.0f;
+        currentTime = 0.0f;
     }
 
     void Update()
@@ -39,7 +46,7 @@ public class LevelManager : MonoBehaviour
 
     private void UpdateTime()
     {
-        currentTime = Time.time;
+        currentTime = Time.timeSinceLevelLoad;
         isTimeUp = (currentTime >= levelTime);
     }
 
