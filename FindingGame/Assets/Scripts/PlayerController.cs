@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
         }
         if (transform.position.z < minZ)
         {
-            position.x = minZ;
+            position.z = minZ;
         }
         if (transform.position.z > maxZ)
         {
