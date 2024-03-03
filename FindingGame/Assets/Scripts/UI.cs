@@ -48,6 +48,11 @@ public class UI : MonoBehaviour
                 retryButton.SetActive(true);
             }
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void ShowTimer()
