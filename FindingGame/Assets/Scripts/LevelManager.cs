@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -21,8 +22,16 @@ public class LevelManager : MonoBehaviour
         isLevelWon = null;
         isLevelCompleted = false;
 
-        levelTime = 60.0f;
         currentTime = 0.0f;
+
+        // level1
+        levelTime = 30.0f;
+
+        //level2
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            InitializeLevel2();
+        }
     }
 
     void Update()
@@ -69,5 +78,10 @@ public class LevelManager : MonoBehaviour
     public bool? GetIsGameWon()
     {
         return isLevelWon;
+    }
+
+    private void InitializeLevel2()
+    {
+        levelTime = 60.0f;
     }
 }
