@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private bool isLocationFound = false;
 
     LevelManager levelManager;
+    public AudioSource locationSound;
 
     void Start()
     {
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
         {
             isLocationFound = true;
             Destroy(other.gameObject);
+            locationSound.Play();
             Debug.Log("Location found");
         }
         else if (!other.gameObject.CompareTag("Ground"))

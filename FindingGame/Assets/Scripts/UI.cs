@@ -53,6 +53,11 @@ public class UI : MonoBehaviour
     private void ShowTimer()
     {
         float currentTime = levelManager.GetCurrentTime();
+        if(currentTime <= 0f)
+        {
+            currentTime = 0f;
+        }
+
         float levelTime = levelManager.GetLevelTime();
         float leftTime = levelTime - currentTime;
         timer.text = leftTime.ToString("F2") + " s";

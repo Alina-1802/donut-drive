@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
-
-    public AudioSource locationSound;
     public AudioSource levelWonSound;
     public AudioSource levelLostSound;
 
@@ -22,10 +20,6 @@ public class Sounds : MonoBehaviour
     
     void Update()
     {
-        if(playerController.GetIsLocationFound())
-        {
-            locationSound.Play();
-        }
 
         if (levelManager.GetIsGameWon() ==  true && hasPlayed == false)
         {
@@ -37,6 +31,5 @@ public class Sounds : MonoBehaviour
             levelLostSound.Play();
             hasPlayed = true;
         }
-        
     }
 }

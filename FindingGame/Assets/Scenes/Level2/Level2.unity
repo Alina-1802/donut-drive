@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d211388ac22f2ab4d964cc414c806aed, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -42473,6 +42473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   angle: 150
+  locationSound: {fileID: 2099153450}
 --- !u!65 &2056711012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43377,6 +43378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 033ac57ddd10c8740acb051caae76e11, type: 3}
+--- !u!82 &2099153450 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5266794854027975628, guid: 033ac57ddd10c8740acb051caae76e11, type: 3}
+  m_PrefabInstance: {fileID: 2099153449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2099502550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8b3300d2ba52ecf409c9523f2eff5bbd, type: 3}
