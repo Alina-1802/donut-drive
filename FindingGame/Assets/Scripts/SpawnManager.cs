@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject locationPrefab;
 
-    private static int locationsNumber = 6;
+    private static int locationsNumber = 8;
     private int currentLocationsNumber; // how many left to spawn
     private int foundLocationsNumber = 0;
 
@@ -24,12 +24,14 @@ public class SpawnManager : MonoBehaviour
         currentLocationsNumber = locationsNumber;
 
         // level 1
-        spawnLocationsPositions[0] = new Vector3(12.6472425f, 7.62939453e-06f, -49.7871704f);
-        spawnLocationsPositions[1] = new Vector3(-137.699997f, 7.62939453e-06f, 38.7999992f);
-        spawnLocationsPositions[2] = new Vector3(82.9000015f, 7.62939453e-06f, 31.2999992f);
-        spawnLocationsPositions[3] = new Vector3(128.199997f, 7.62939453e-06f, -87.5999985f);
-        spawnLocationsPositions[4] = new Vector3(-87.8000031f, 7.62939453e-06f, -82.4000015f);
-        spawnLocationsPositions[5] = new Vector3(62.2000008f, 7.62939453e-06f, -20.3999996f);
+        spawnLocationsPositions[0] = new Vector3(7f, 7.62939453e-06f, -114.5f);
+        spawnLocationsPositions[1] = new Vector3(-1.79999995f, 7.62939453e-06f, -68.0999985f);
+        spawnLocationsPositions[2] = new Vector3(40.9000015f, 7.62939453e-06f, -68.0999985f);
+        spawnLocationsPositions[3] = new Vector3(95.6999969f, 7.62939453e-06f, -55.4000015f);
+        spawnLocationsPositions[4] = new Vector3(99.1999969f, 7.62939453e-06f, -103.699997f);
+        spawnLocationsPositions[5] = new Vector3(33.4000015f, 7.62939453e-06f, -103.199997f);
+        spawnLocationsPositions[6] = new Vector3(1.79999995f, 7.62939453e-06f, -123.800003f);
+        spawnLocationsPositions[7] = new Vector3(26.8999996f, 7.62939453e-06f, -152.100006f);
 
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
