@@ -12,7 +12,8 @@ public class UI : MonoBehaviour
     public GameObject levelLost;
     public TextMeshProUGUI locationsNumber;
     public GameObject retryButton;
-    public GameObject nextLevelbutton;
+    public GameObject nextLevelButton;
+    public GameObject quitButton;
 
     private LevelManager levelManager;
     private SpawnManager spawnManager;
@@ -25,8 +26,9 @@ public class UI : MonoBehaviour
         levelWon.SetActive(false);
         levelLost.SetActive(false);
 
-        nextLevelbutton.SetActive(false);
+        nextLevelButton.SetActive(false);
         retryButton.SetActive(false);
+        quitButton.SetActive(false);
     }
 
     void Update()
@@ -40,13 +42,11 @@ public class UI : MonoBehaviour
 
             if(levelManager.GetIsGameWon() == true)
             {
-                nextLevelbutton.SetActive(true);
-                retryButton.SetActive(true);
+                nextLevelButton.SetActive(true);
             }
-            else if(levelManager.GetIsGameWon() == false)
-            {
-                retryButton.SetActive(true);
-            }
+
+            retryButton.SetActive(true);
+            quitButton.SetActive(true);
         }
 
         if (Input.GetKey(KeyCode.Escape))
@@ -94,5 +94,10 @@ public class UI : MonoBehaviour
     public void PlayNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
