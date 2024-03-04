@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-    
+
     public bool GetIsLocationFound()
     {
         return isLocationFound;
