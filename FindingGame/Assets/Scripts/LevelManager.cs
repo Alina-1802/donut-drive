@@ -25,13 +25,25 @@ public class LevelManager : MonoBehaviour
 
         currentTime = 0.0f;
 
-        // level1
-        levelTime = 30.0f;
-
-        //level2
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            InitializeLevel2();
+            // level1.1
+            InitializeLevel1_1();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            //level1.2
+            InitializeLevel1_2();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            //level2.1
+            InitializeLevel1_3();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            //level2.1
+            InitializeLevel2_1();
         }
 
         levelTime += countingOffset;
@@ -83,9 +95,24 @@ public class LevelManager : MonoBehaviour
         return isLevelWon;
     }
 
-    private void InitializeLevel2()
+    private void InitializeLevel1_1()
     {
-        levelTime = 60.0f;
+        levelTime = 30.0f;
+    }
+
+    private void InitializeLevel1_2()
+    {
+        levelTime = 30.0f;
+    }
+
+    private void InitializeLevel1_3()
+    {
+        levelTime = 25.0f;
+    }
+
+    private void InitializeLevel2_1()
+    {
+        levelTime = 40.0f;
     }
 
     public float GetCountingOffset()
