@@ -11,6 +11,7 @@ public class UI : MonoBehaviour
     public GameObject levelWon;
     public GameObject levelLost;
     public TextMeshProUGUI locationsNumber;
+    public TextMeshProUGUI counting;
     public GameObject retryButton;
     public GameObject nextLevelButton;
     public GameObject quitButton;
@@ -29,24 +30,35 @@ public class UI : MonoBehaviour
         nextLevelButton.SetActive(false);
         retryButton.SetActive(false);
         quitButton.SetActive(false);
+
+        counting.gameObject.SetActive(true);
+        counting.text = string.Empty;
     }
 
     void Update()
     {
-        ShowTimer();
-        ShowLocationsNumber();
-
-        if (levelManager.GetIsGameWon() != null)
+        if(Time.timeSinceLevelLoad <= 3)
         {
-            ShowGameOver();
+            ShowCounting();
+        }
+        else
+        {
+            counting.gameObject.SetActive(false);
+            ShowTimer();
+            ShowLocationsNumber();
 
-            if(levelManager.GetIsGameWon() == true)
+            if (levelManager.GetIsGameWon() != null)
             {
-                nextLevelButton.SetActive(true);
-            }
+                ShowGameOver();
 
-            retryButton.SetActive(true);
-            quitButton.SetActive(true);
+                if (levelManager.GetIsGameWon() == true)
+                {
+                    nextLevelButton.SetActive(true);
+                }
+
+                retryButton.SetActive(true);
+                quitButton.SetActive(true);
+            }
         }
 
         if (Input.GetKey(KeyCode.Escape))
@@ -84,6 +96,24 @@ public class UI : MonoBehaviour
     {
         int leftLocationsNumber = spawnManager.GetLeftLocationsNumber();
         locationsNumber.text = leftLocationsNumber.ToString();
+    }
+
+    private void ShowCounting()
+    {
+        string[] time = { "3", "2", "1" };
+
+        if(Time.timeSinceLevelLoad <= 1)
+        {
+            counting.text = time[0];
+        }
+        else if(Time.timeSinceLevelLoad > 1 && Time.timeSinceLevelLoad <=2)
+        {
+            counting.text = time[1];
+        }
+        else if(Time.timeSinceLevelLoad >= 2 && Time.timeSinceLevelLoad <= 3)
+        {
+            counting.text = time[2];
+        }
     }
 
     public void RetryLevel()

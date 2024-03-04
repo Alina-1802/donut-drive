@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(levelManager.GetIsGameWon() == null)
+        if((levelManager.GetIsGameWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()))
         {
             MovePlayer();
         }

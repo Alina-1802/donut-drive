@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
 
     public float levelTime = 60.0f;
     private float currentTime = 0.0f;
+    private float countingOffset = 3.0f;
 
     private SpawnManager spawnManager;
 
@@ -32,6 +33,8 @@ public class LevelManager : MonoBehaviour
         {
             InitializeLevel2();
         }
+
+        levelTime += countingOffset;
     }
 
     void Update()
@@ -84,4 +87,10 @@ public class LevelManager : MonoBehaviour
     {
         levelTime = 60.0f;
     }
+
+    public float GetCountingOffset()
+    {
+        return countingOffset;
+    }
+
 }
