@@ -37,10 +37,20 @@ public class LevelManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            //level2.1
+            //level1.3
             InitializeLevel1_3();
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            //level1.4
+            InitializeLevel1_4();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            //level1.5
+            InitializeLevel1_5();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             //level2.1
             InitializeLevel2_1();
@@ -95,6 +105,11 @@ public class LevelManager : MonoBehaviour
         return isLevelWon;
     }
 
+    public void SetIsLevelWon(bool state)
+    {
+        isLevelWon = state;
+    }
+
     private void InitializeLevel1_1()
     {
         levelTime = 30.0f;
@@ -106,6 +121,16 @@ public class LevelManager : MonoBehaviour
     }
 
     private void InitializeLevel1_3()
+    {
+        levelTime = 25.0f;
+    }
+
+    private void InitializeLevel1_4()
+    {
+        levelTime = 30.0f;
+    }
+
+    private void InitializeLevel1_5()
     {
         levelTime = 25.0f;
     }

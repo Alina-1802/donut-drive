@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 100.0f;
     public float angle = 150.0f;
 
     private bool isLocationFound = false;
@@ -47,7 +48,6 @@ public class PlayerController : MonoBehaviour
         rb.drag = 5f; 
         rb.angularDrag = 5f;
 
-
         SetBoundaries();
     }
 
@@ -59,6 +59,10 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             locationSound.Play();
             Debug.Log("Location found");
+        }
+        else if (other.gameObject.CompareTag("Water"))
+        {
+            levelManager.SetIsLevelWon(false);
         }
         else if (!other.gameObject.CompareTag("Ground"))
         {
