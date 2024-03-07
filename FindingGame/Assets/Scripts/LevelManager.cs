@@ -60,6 +60,11 @@ public class LevelManager : MonoBehaviour
             //level3.1
             InitializeLevel3_1();
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            //level3.1
+            InitializeLevel3_2();
+        }
 
         levelTime += countingOffset;
     }
@@ -146,7 +151,11 @@ public class LevelManager : MonoBehaviour
     }
     private void InitializeLevel3_1()
     {
-        levelTime = 60.0f;
+        levelTime = 50.0f;
+    }
+    private void InitializeLevel3_2()
+    {
+        levelTime = 30.0f;
     }
 
     public float GetCountingOffset()

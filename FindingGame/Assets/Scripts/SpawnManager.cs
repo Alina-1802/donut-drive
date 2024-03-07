@@ -57,6 +57,11 @@ public class SpawnManager : MonoBehaviour
             // level 3.1
             InitializeLevel3_1();
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            // level 3.2
+            InitializeLevel3_2();
+        }
 
         Instantiate(locationPrefab, spawnLocationsPositions[0], locationPrefab.transform.rotation);
         currentLocationsNumber--;
@@ -237,5 +242,20 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[4] = new Vector3(8.30000019f, 1.15999997f, 73.8000031f);
         spawnLocationsPositions[5] = new Vector3(-19.3999996f, 1.15999997f, 88.5f);
         spawnLocationsPositions[6] = new Vector3(-2.79999995f, 1.15999997f, 110.900002f);
+    }
+
+    private void InitializeLevel3_2()
+    {
+        locationsNumber = 5;
+        currentLocationsNumber = locationsNumber;
+
+        spawnLocationsPositions = null;
+        spawnLocationsPositions = new Vector3[locationsNumber];
+
+        spawnLocationsPositions[0] = new Vector3(-0.100000001f, 1.01999998f, -10.6000004f);
+        spawnLocationsPositions[1] = new Vector3(-35.4000015f, 1.01999998f, 24f);
+        spawnLocationsPositions[2] = new Vector3(62.7999992f, 1.01999998f, 45.5999985f);
+        spawnLocationsPositions[3] = new Vector3(53.7999992f, 1.01999998f, -9.19999981f);
+        spawnLocationsPositions[4] = new Vector3(82.8000031f, 1.01999998f, -8.19999981f);
     }
 }
