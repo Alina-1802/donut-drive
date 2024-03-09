@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 100.0f;
     public float angle = 150.0f;
 
     private bool isLocationFound = false;
 
     LevelManager levelManager;
+    public AudioSource locationSound;
 
     void Start()
     {
@@ -19,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(levelManager.GetIsGameWon() == null)
+        if((levelManager.GetIsGameWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()))
         {
             MovePlayer();
         }
@@ -45,6 +47,8 @@ public class PlayerController : MonoBehaviour
 
         rb.drag = 5f; 
         rb.angularDrag = 5f;
+
+        SetBoundaries();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -53,7 +57,12 @@ public class PlayerController : MonoBehaviour
         {
             isLocationFound = true;
             Destroy(other.gameObject);
+            locationSound.Play();
             Debug.Log("Location found");
+        }
+        else if (other.gameObject.CompareTag("Water"))
+        {
+            levelManager.SetIsLevelWon(false);
         }
         else if (!other.gameObject.CompareTag("Ground"))
         {
@@ -61,7 +70,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-    
+
     public bool GetIsLocationFound()
     {
         return isLocationFound;
@@ -70,5 +79,38 @@ public class PlayerController : MonoBehaviour
     public void SetIsLocationFound(bool value)
     {
         isLocationFound = value;
+    }
+
+    private void SetBoundaries()
+    {
+        Collider collider = GameObject.Find("Ground").GetComponent<Collider>();
+        Bounds bounds = collider.bounds;
+        Vector3 size = bounds.size;
+
+        float minX = -bounds.size.x / 2f;
+        float maxX = bounds.size.x / 2f;
+        float minZ = -bounds.size.z / 2f;
+        float maxZ = bounds.size.z / 2f;
+
+        Vector3 position = transform.position;
+
+        if (transform.position.x < minX)
+        {
+            position.x = minX;
+        }
+        if (transform.position.x > maxX)
+        {
+            position.x = maxX;
+        }
+        if (transform.position.z < minZ)
+        {
+            position.z = minZ;
+        }
+        if (transform.position.z > maxZ)
+        {
+            position.z = maxZ;
+        }
+
+        transform.position = position;
     }
 }
