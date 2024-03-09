@@ -42,5 +42,9 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
-/FindingGame/.vs/FindingGame/FileContentIndex
-/FindingGame/Logs
+
+FindingGame/.vs/FindingGame/FileContentIndex
+FindingGame/Logs/AssetImportWorker1.log
+FindingGame/Logs/shadercompiler-AssetImportWorker0.log
+FindingGame/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+UserSettings
