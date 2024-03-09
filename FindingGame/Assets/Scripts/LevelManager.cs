@@ -14,10 +14,12 @@ public class LevelManager : MonoBehaviour
     private float countingOffset = 3.0f;
 
     private SpawnManager spawnManager;
+    private UI ui;
 
     void Start()
     {
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        ui = GameObject.Find("UI").GetComponent<UI>();
 
         isTimeUp = false;
         isLevelWon = null;
@@ -62,7 +64,7 @@ public class LevelManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            //level3.1
+            //level3.2
             InitializeLevel3_2();
         }
 
@@ -71,7 +73,7 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if(isLevelWon == null)
+        if(isLevelWon == null && !ui.GetIsGamePaused())
         {
             UpdateTime();
             SetLevelState(); 
@@ -90,7 +92,7 @@ public class LevelManager : MonoBehaviour
 
     private void UpdateTime()
     {
-        currentTime = Time.timeSinceLevelLoad;
+        currentTime += Time.deltaTime;
         isTimeUp = (currentTime >= levelTime);
     }
 

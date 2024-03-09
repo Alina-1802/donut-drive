@@ -15,9 +15,13 @@ public class UI : MonoBehaviour
     public GameObject retryButton;
     public GameObject nextLevelButton;
     public GameObject quitButton;
+    public GameObject pauseMenu;
 
     private LevelManager levelManager;
     private SpawnManager spawnManager;
+
+    private bool isGamePaused = false;
+    private bool firstPressing = true;
 
     void Start()
     {
@@ -26,6 +30,7 @@ public class UI : MonoBehaviour
 
         levelWon.SetActive(false);
         levelLost.SetActive(false);
+        pauseMenu.SetActive(false);
 
         nextLevelButton.SetActive(false);
         retryButton.SetActive(false);
@@ -37,33 +42,54 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-        if(Time.timeSinceLevelLoad <= 3)
+        if (isGamePaused == false)
         {
-            ShowCounting();
-        }
-        else
-        {
-            counting.gameObject.SetActive(false);
-            ShowTimer();
-            ShowLocationsNumber();
-
-            if (levelManager.GetIsGameWon() != null)
+            if (levelManager.GetCurrentTime() <= 3)
             {
-                ShowGameOver();
+                ShowCounting();
+            }
+            else
+            {
+                counting.gameObject.SetActive(false);
+                ShowTimer();
+                ShowLocationsNumber();
 
-                if (levelManager.GetIsGameWon() == true)
+                if (levelManager.GetIsGameWon() != null)
                 {
-                    nextLevelButton.SetActive(true);
-                }
+                    ShowGameOver();
 
-                retryButton.SetActive(true);
-                quitButton.SetActive(true);
+                    if (levelManager.GetIsGameWon() == true)
+                    {
+                        nextLevelButton.SetActive(true);
+                    }
+
+                    retryButton.SetActive(true);
+                    quitButton.SetActive(true);
+                }
             }
         }
 
-        if (Input.GetKey(KeyCode.Escape))
+
+
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.Quit();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (firstPressing)
+            {
+                isGamePaused = true;
+                firstPressing = false;
+                pauseMenu.SetActive(true);
+
+            }
+            else
+            {
+                isGamePaused = false;
+                firstPressing = true;
+                pauseMenu.SetActive(false);
+            }
         }
     }
 
@@ -102,15 +128,15 @@ public class UI : MonoBehaviour
     {
         string[] time = { "3", "2", "1" };
 
-        if(Time.timeSinceLevelLoad <= 1)
+        if(levelManager.GetCurrentTime() <= 1)
         {
             counting.text = time[0];
         }
-        else if(Time.timeSinceLevelLoad > 1 && Time.timeSinceLevelLoad <=2)
+        else if(levelManager.GetCurrentTime() > 1 && levelManager.GetCurrentTime() <= 2)
         {
             counting.text = time[1];
         }
-        else if(Time.timeSinceLevelLoad >= 2 && Time.timeSinceLevelLoad <= 3)
+        else if(levelManager.GetCurrentTime() >= 2 && levelManager.GetCurrentTime() <= 3)
         {
             counting.text = time[2];
         }
@@ -129,5 +155,9 @@ public class UI : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public bool GetIsGamePaused()
+    {
+        return isGamePaused;
     }
 }

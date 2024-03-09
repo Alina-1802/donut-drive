@@ -12,16 +12,19 @@ public class PlayerController : MonoBehaviour
     private bool isLocationFound = false;
 
     LevelManager levelManager;
+    UI ui;
+
     public AudioSource locationSound;
 
     void Start()
     {
-        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();   
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        ui = GameObject.Find("UI").GetComponent<UI>();
     }
 
     void Update()
     {
-        if((levelManager.GetIsGameWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()))
+        if((levelManager.GetIsGameWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()) &&  (!ui.GetIsGamePaused()))
         {
             MovePlayer();
         }
