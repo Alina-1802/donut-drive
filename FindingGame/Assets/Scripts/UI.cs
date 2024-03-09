@@ -15,6 +15,8 @@ public class UI : MonoBehaviour
     public GameObject retryButton;
     public GameObject nextLevelButton;
     public GameObject quitButton;
+    public GameObject chooseLevelButton;
+
     public GameObject pauseMenu;
 
     private LevelManager levelManager;
@@ -33,6 +35,7 @@ public class UI : MonoBehaviour
         pauseMenu.SetActive(false);
 
         nextLevelButton.SetActive(false);
+        chooseLevelButton.SetActive(false);
         retryButton.SetActive(false);
         quitButton.SetActive(false);
 
@@ -54,15 +57,16 @@ public class UI : MonoBehaviour
                 ShowTimer();
                 ShowLocationsNumber();
 
-                if (levelManager.GetIsGameWon() != null)
+                if (levelManager.GetIsLevelWon() != null)
                 {
                     ShowGameOver();
 
-                    if (levelManager.GetIsGameWon() == true)
+                    if (levelManager.GetIsLevelWon() == true)
                     {
                         nextLevelButton.SetActive(true);
                     }
 
+                    chooseLevelButton.SetActive(true);
                     retryButton.SetActive(true);
                     quitButton.SetActive(true);
                 }
@@ -75,7 +79,7 @@ public class UI : MonoBehaviour
         {
             Application.Quit();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null)
         {
             if (firstPressing)
             {
@@ -108,11 +112,11 @@ public class UI : MonoBehaviour
 
     private void ShowGameOver()
     {
-        if(levelManager.GetIsGameWon() == true)
+        if(levelManager.GetIsLevelWon() == true)
         {
             levelWon.SetActive(true);
         }
-        else if(levelManager.GetIsGameWon() == false)
+        else if(levelManager.GetIsLevelWon() == false)
         {
             levelLost.SetActive(true);
         }

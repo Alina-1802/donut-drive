@@ -21,12 +21,12 @@ public class Sounds : MonoBehaviour
     void Update()
     {
 
-        if (levelManager.GetIsGameWon() ==  true && hasPlayed == false)
+        if (levelManager.GetIsLevelWon() ==  true && hasPlayed == false)
         {
             levelWonSound.Play();
             hasPlayed = true;
         }
-        else if(levelManager.GetIsGameWon() == false && hasPlayed == false)
+        else if(levelManager.GetIsLevelWon() == false && hasPlayed == false)
         {
             levelLostSound.Play();
             hasPlayed = true;

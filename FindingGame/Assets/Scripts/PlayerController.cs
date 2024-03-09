@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if((levelManager.GetIsGameWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()) &&  (!ui.GetIsGamePaused()))
+        if((levelManager.GetIsLevelWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()) &&  (!ui.GetIsGamePaused()))
         {
             MovePlayer();
         }

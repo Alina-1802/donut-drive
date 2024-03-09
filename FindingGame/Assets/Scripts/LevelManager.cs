@@ -112,7 +112,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public bool? GetIsGameWon()
+    public bool? GetIsLevelWon()
     {
         return isLevelWon;
     }

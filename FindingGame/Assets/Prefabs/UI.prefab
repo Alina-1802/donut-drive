@@ -368,7 +368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1558147406
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8298609545143841643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 2911085844976838722}
   - component: {fileID: 4883384081365946791}
   m_Layer: 5
-  m_Name: EndGamePanel
+  m_Name: EndLevelPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2578,6 +2578,7 @@ MonoBehaviour:
   retryButton: {fileID: 2522621157120197558}
   nextLevelButton: {fileID: 9126923523644709078}
   quitButton: {fileID: 9126923523320406411}
+  chooseLevelButton: {fileID: 1558147405}
   pauseMenu: {fileID: 1424870749}
 --- !u!1 &9126923523320406411
 GameObject:
@@ -2597,7 +2598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9126923523320406410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2866,7 +2867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3057227565493424858
 RectTransform:
   m_ObjectHideFlags: 0
