@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,6 +19,7 @@ public class UI : MonoBehaviour
     public GameObject chooseLevelButton;
 
     public GameObject pauseMenu;
+    public GameObject levelsPanel;
 
     private LevelManager levelManager;
     private SpawnManager spawnManager;
@@ -33,6 +35,7 @@ public class UI : MonoBehaviour
         levelWon.SetActive(false);
         levelLost.SetActive(false);
         pauseMenu.SetActive(false);
+        levelsPanel.SetActive(false);
 
         nextLevelButton.SetActive(false);
         chooseLevelButton.SetActive(false);
@@ -163,5 +166,26 @@ public class UI : MonoBehaviour
     public bool GetIsGamePaused()
     {
         return isGamePaused;
+    }
+
+    public void ShowLevels()
+    {
+        pauseMenu.SetActive(false);
+        levelsPanel.SetActive(true);
+    }
+
+    public void BackToPauseMenu()
+    {
+        levelsPanel.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+
+    public void PlaySpecificLevel(GameObject button)
+    {
+        string stringSceneNumber = button.GetComponentInChildren<TextMeshProUGUI>().text;
+        int sceneNumber = Int32.Parse(stringSceneNumber);
+        Debug.Log(sceneNumber);
+
+        SceneManager.LoadScene(sceneNumber - 1);
     }
 }
