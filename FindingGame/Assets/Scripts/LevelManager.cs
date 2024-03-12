@@ -27,52 +27,7 @@ public class LevelManager : MonoBehaviour
 
         currentTime = 0.0f;
 
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            // level1.1
-            InitializeLevel1_1();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            //level1.2
-            InitializeLevel1_2();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            //level1.3
-            InitializeLevel1_3();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            //level1.4
-            InitializeLevel1_4();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            //level1.5
-            InitializeLevel1_5();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            //level2.1
-            InitializeLevel2_1();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            //level2.2
-            InitializeLevel2_2();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 7)
-        {
-            //level2.3
-            InitializeLevel2_3();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 8)
-        {
-            //level3.1
-            InitializeLevel3_1();
-        }
-
+        InitializeCurrentLevel();
 
         levelTime += countingOffset;
     }
@@ -168,6 +123,60 @@ public class LevelManager : MonoBehaviour
     private void InitializeLevel3_1()
     {
         levelTime = 40.0f;
+    }
+
+    private void InitializeCurrentLevel()
+    {
+        int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+
+        switch (currentLevelIndex)
+        {
+            case 0:
+                {
+                    InitializeLevel1_1();
+                    break;
+                }
+            case 1:
+                {
+                    InitializeLevel1_2();
+                    break;
+                }
+            case 2:
+                {
+                    InitializeLevel1_3();
+                    break;
+                }
+            case 3:
+                {
+                    InitializeLevel1_4();
+                    break;
+                }
+            case 4:
+                {
+                    InitializeLevel1_5();
+                    break;
+                }
+            case 5:
+                {
+                    InitializeLevel2_1();
+                    break;
+                }
+            case 6:
+                {
+                    InitializeLevel2_2();
+                    break;
+                }
+            case 7:
+                {
+                    InitializeLevel2_3();
+                    break;
+                }
+            case 8:
+                {
+                    InitializeLevel3_1();
+                    break;
+                }
+        }
     }
 
     public float GetCountingOffset()

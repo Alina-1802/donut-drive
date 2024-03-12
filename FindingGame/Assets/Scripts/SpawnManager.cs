@@ -21,52 +21,7 @@ public class SpawnManager : MonoBehaviour
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
 
-        
-        if(SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            // level 1.1
-            InitializeLevel1_1();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            // level 1.2
-            InitializeLevel1_2();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            // level 1.3
-            InitializeLevel1_3();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            // level 1.4
-            InitializeLevel1_4();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            // level 1.5
-            InitializeLevel1_5();
-        }
-        else if(SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            // level 2.1
-            InitializeLevel2_1();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            // level 2.2
-            InitializeLevel2_2();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 7)
-        {
-            // level 2.3
-            InitializeLevel2_3();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 8)
-        {
-            // level 3.1
-            InitializeLevel3_1();
-        }
+        InitializeCurrentLevel();
 
         Instantiate(locationPrefab, spawnLocationsPositions[0], locationPrefab.transform.rotation);
         currentLocationsNumber--;
@@ -277,5 +232,59 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[5] = new Vector3(-134.899994f, 0.015f, 18.1000004f);
         spawnLocationsPositions[6] = new Vector3(63.4000015f, 0.015f, 11.5f);
         spawnLocationsPositions[7] = new Vector3(63.4000015f, 0.015f, -125.099998f);
+    }
+
+    private void InitializeCurrentLevel()
+    {
+        int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+
+        switch (currentLevelIndex)
+        {
+            case 0:
+                {
+                    InitializeLevel1_1();
+                    break;
+                }
+            case 1: 
+                {
+                    InitializeLevel1_2();
+                    break;
+                }
+            case 2:
+                {
+                    InitializeLevel1_3();
+                    break;
+                }
+            case 3:
+                {
+                    InitializeLevel1_4();
+                    break;
+                }
+            case 4:
+                {
+                    InitializeLevel1_5();
+                    break;
+                }
+            case 5:
+                {
+                    InitializeLevel2_1();
+                    break;
+                }
+            case 6:
+                {
+                    InitializeLevel2_2();
+                    break;
+                }
+            case 7:
+                {
+                    InitializeLevel2_3();
+                    break;
+                }
+            case 8:
+                {
+                    InitializeLevel3_1();
+                    break;
+                }
+        }
     }
 }
