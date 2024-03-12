@@ -59,14 +59,20 @@ public class LevelManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
-            //level3.1
-            InitializeLevel3_1();
+            //level2.2
+            InitializeLevel2_2();
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            //level3.2
-            InitializeLevel3_2();
+            //level2.3
+            InitializeLevel2_3();
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 8)
+        {
+            //level3.1
+            InitializeLevel3_1();
+        }
+
 
         levelTime += countingOffset;
     }
@@ -149,20 +155,25 @@ public class LevelManager : MonoBehaviour
 
     private void InitializeLevel2_1()
     {
-        levelTime = 40.0f;
+        levelTime = 50.0f;
+    }
+    private void InitializeLevel2_2()
+    {
+        levelTime = 30.0f;
+    }
+    private void InitializeLevel2_3()
+    {
+        levelTime = 30.0f;
     }
     private void InitializeLevel3_1()
     {
-        levelTime = 50.0f;
-    }
-    private void InitializeLevel3_2()
-    {
-        levelTime = 30.0f;
+        levelTime = 40.0f;
     }
 
     public float GetCountingOffset()
     {
         return countingOffset;
     }
+
 
 }

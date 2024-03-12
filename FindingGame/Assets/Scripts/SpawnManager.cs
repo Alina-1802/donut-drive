@@ -54,13 +54,18 @@ public class SpawnManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
-            // level 3.1
-            InitializeLevel3_1();
+            // level 2.2
+            InitializeLevel2_2();
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            // level 3.2
-            InitializeLevel3_2();
+            // level 2.3
+            InitializeLevel2_3();
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 8)
+        {
+            // level 3.1
+            InitializeLevel3_1();
         }
 
         Instantiate(locationPrefab, spawnLocationsPositions[0], locationPrefab.transform.rotation);
@@ -211,24 +216,6 @@ public class SpawnManager : MonoBehaviour
 
     private void InitializeLevel2_1()
     {
-        locationsNumber = 8;
-        currentLocationsNumber = locationsNumber;
-
-        spawnLocationsPositions = null;
-        spawnLocationsPositions = new Vector3[locationsNumber];
-
-        spawnLocationsPositions[0] = new Vector3(63.4940834f, 0.015f, 30.7000008f);
-        spawnLocationsPositions[1] = new Vector3(133.5f, 0.015f, 111.900002f);
-        spawnLocationsPositions[2] = new Vector3(194.300003f, 0.02f, -28.1000004f);
-        spawnLocationsPositions[3] = new Vector3(134.199997f, 0.015f, -120.300003f);
-        spawnLocationsPositions[4] = new Vector3(-52.7000008f, 0.02f, -128.699997f);
-        spawnLocationsPositions[5] = new Vector3(-134.899994f, 0.015f, 18.1000004f);
-        spawnLocationsPositions[6] = new Vector3(63.4000015f, 0.015f, 11.5f);
-        spawnLocationsPositions[7] = new Vector3(63.4000015f, 0.015f, -125.099998f);
-    }
-
-    private void InitializeLevel3_1()
-    {
         locationsNumber = 7;
         currentLocationsNumber = locationsNumber;
 
@@ -244,7 +231,7 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[6] = new Vector3(-2.79999995f, 1.15999997f, 110.900002f);
     }
 
-    private void InitializeLevel3_2()
+    private void InitializeLevel2_2()
     {
         locationsNumber = 5;
         currentLocationsNumber = locationsNumber;
@@ -257,5 +244,38 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[2] = new Vector3(62.7999992f, 1.01999998f, 45.5999985f);
         spawnLocationsPositions[3] = new Vector3(53.7999992f, 1.01999998f, -9.19999981f);
         spawnLocationsPositions[4] = new Vector3(82.8000031f, 1.01999998f, -8.19999981f);
+    }
+
+    private void InitializeLevel2_3()
+    {
+        locationsNumber = 5;
+        currentLocationsNumber = locationsNumber;
+
+        spawnLocationsPositions = null;
+        spawnLocationsPositions = new Vector3[locationsNumber];
+
+        spawnLocationsPositions[0] = new Vector3(0f, 1.19000006f, -7f);
+        spawnLocationsPositions[1] = new Vector3(44.7999992f, 1.19000006f, 41.4000015f);
+        spawnLocationsPositions[2] = new Vector3(44.7999992f, 1.19000006f, 79.0999985f);
+        spawnLocationsPositions[3] = new Vector3(-25.7999992f, 1.19000006f, 78.5999985f);
+        spawnLocationsPositions[4] = new Vector3(-80f, 1.19000006f, 78.5999985f);
+    }
+
+    private void InitializeLevel3_1()
+    {
+        locationsNumber = 8;
+        currentLocationsNumber = locationsNumber;
+
+        spawnLocationsPositions = null;
+        spawnLocationsPositions = new Vector3[locationsNumber];
+
+        spawnLocationsPositions[0] = new Vector3(63.4940834f, 0.015f, 30.7000008f);
+        spawnLocationsPositions[1] = new Vector3(133.5f, 0.015f, 111.900002f);
+        spawnLocationsPositions[2] = new Vector3(194.300003f, 0.02f, -28.1000004f);
+        spawnLocationsPositions[3] = new Vector3(134.199997f, 0.015f, -120.300003f);
+        spawnLocationsPositions[4] = new Vector3(-52.7000008f, 0.02f, -128.699997f);
+        spawnLocationsPositions[5] = new Vector3(-134.899994f, 0.015f, 18.1000004f);
+        spawnLocationsPositions[6] = new Vector3(63.4000015f, 0.015f, 11.5f);
+        spawnLocationsPositions[7] = new Vector3(63.4000015f, 0.015f, -125.099998f);
     }
 }
