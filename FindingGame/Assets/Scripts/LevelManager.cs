@@ -124,6 +124,10 @@ public class LevelManager : MonoBehaviour
     {
         levelTime = 70.0f;
     }
+    private void InitializeLevel2_5()
+    {
+        levelTime = 70.0f;
+    }
     private void InitializeLevel3_1()
     {
         levelTime = 40.0f;
@@ -181,6 +185,11 @@ public class LevelManager : MonoBehaviour
                     break;
                 }
             case 9:
+                {
+                    InitializeLevel2_5();
+                    break;
+                }
+            case 10:
                 {
                     InitializeLevel3_1();
                     break;
