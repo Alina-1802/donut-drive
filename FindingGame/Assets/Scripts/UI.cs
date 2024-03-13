@@ -34,6 +34,7 @@ public class UI : MonoBehaviour
         levelWon.SetActive(false);
         levelLost.SetActive(false);
         pauseText.SetActive(true);
+
         pauseMenu.SetActive(false);
         levelsPanel.SetActive(false);
 
