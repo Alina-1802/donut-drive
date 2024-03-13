@@ -9,14 +9,13 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     public TextMeshProUGUI timer;
+
     public GameObject levelWon;
     public GameObject levelLost;
+    public GameObject pauseText;
+
     public TextMeshProUGUI locationsNumber;
     public TextMeshProUGUI counting;
-    public GameObject retryButton;
-    public GameObject nextLevelButton;
-    public GameObject quitButton;
-    public GameObject chooseLevelButton;
 
     public GameObject pauseMenu;
     public GameObject levelsPanel;
@@ -34,13 +33,9 @@ public class UI : MonoBehaviour
 
         levelWon.SetActive(false);
         levelLost.SetActive(false);
+        pauseText.SetActive(true);
         pauseMenu.SetActive(false);
         levelsPanel.SetActive(false);
-
-        nextLevelButton.SetActive(false);
-        chooseLevelButton.SetActive(false);
-        retryButton.SetActive(false);
-        quitButton.SetActive(false);
 
         counting.gameObject.SetActive(true);
         counting.text = string.Empty;
@@ -63,26 +58,17 @@ public class UI : MonoBehaviour
                 if (levelManager.GetIsLevelWon() != null)
                 {
                     ShowGameOver();
-
-                    if (levelManager.GetIsLevelWon() == true)
-                    {
-                        nextLevelButton.SetActive(true);
-                    }
-
-                    chooseLevelButton.SetActive(true);
-                    retryButton.SetActive(true);
-                    quitButton.SetActive(true);
+                    pauseMenu.SetActive(true);
+                    isGamePaused = true;
                 }
             }
         }
-
-
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.Quit();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null)
+        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null && !levelsPanel.activeSelf)
         {
             if (firstPressing)
             {
@@ -118,10 +104,12 @@ public class UI : MonoBehaviour
         if(levelManager.GetIsLevelWon() == true)
         {
             levelWon.SetActive(true);
+            pauseText.SetActive(false);
         }
         else if(levelManager.GetIsLevelWon() == false)
         {
             levelLost.SetActive(true);
+            pauseText.SetActive(false);
         }
     }
 
