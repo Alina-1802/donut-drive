@@ -130,7 +130,7 @@ public class LevelManager : MonoBehaviour
     }
     private void InitializeLevel3_1()
     {
-        levelTime = 40.0f;
+        levelTime = 30.0f;
     }
 
     private void InitializeCurrentLevel()

@@ -259,12 +259,11 @@ public class SpawnManager : MonoBehaviour
 
     private void InitializeLevel3_1()
     {
-        locationsNumber = 8;
+        locationsNumber = 13;
         currentLocationsNumber = locationsNumber;
 
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
-
         spawnLocationsPositions[0] = new Vector3(63.4940834f, 0.015f, 30.7000008f);
         spawnLocationsPositions[1] = new Vector3(133.5f, 0.015f, 111.900002f);
         spawnLocationsPositions[2] = new Vector3(194.300003f, 0.02f, -28.1000004f);
@@ -273,6 +272,19 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[5] = new Vector3(-134.899994f, 0.015f, 18.1000004f);
         spawnLocationsPositions[6] = new Vector3(63.4000015f, 0.015f, 11.5f);
         spawnLocationsPositions[7] = new Vector3(63.4000015f, 0.015f, -125.099998f);
+        spawnLocationsPositions[0] = new Vector3(67f, 1.21000004f, -59.4000015f);
+        spawnLocationsPositions[1] = new Vector3(63.5f, 1.21000004f, 11.3999996f);
+        spawnLocationsPositions[2] = new Vector3(63.2999992f, 1.21000004f, 72.4000015f);
+        spawnLocationsPositions[3] = new Vector3(89f, 1.21000004f, 110.400002f);
+        spawnLocationsPositions[4] = new Vector3(170.100006f, 1.21000004f, 111.099998f);
+        spawnLocationsPositions[5] = new Vector3(201.899994f, 1.21000004f, 70.5999985f);
+        spawnLocationsPositions[6] = new Vector3(174.600006f, 1.21000004f, 12.5f);
+        spawnLocationsPositions[7] = new Vector3(99.6999969f, 1.21000004f, 12.3000002f);
+        spawnLocationsPositions[8] = new Vector3(6.9000001f, 1.21000004f, 12.1000004f);
+        spawnLocationsPositions[9] = new Vector3(-55.0999985f, 1.21000004f, -24f);
+        spawnLocationsPositions[10] = new Vector3(-54.9000015f, 1.21000004f, -101.599998f);
+        spawnLocationsPositions[11] = new Vector3(7.5f, 1.21000004f, -127.5f);
+        spawnLocationsPositions[12] = new Vector3(63.2000008f, 1.21000004f, -102.199997f);
     }
 
     private void InitializeCurrentLevel()
