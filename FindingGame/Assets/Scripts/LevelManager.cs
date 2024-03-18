@@ -132,6 +132,14 @@ public class LevelManager : MonoBehaviour
     {
         levelTime = 30.0f;
     }
+    private void InitializeLevel3_2()
+    {
+        levelTime = 30.0f;
+    }
+    private void InitializeLevel3_3()
+    {
+        levelTime = 30.0f;
+    }
 
     private void InitializeCurrentLevel()
     {
@@ -192,6 +200,16 @@ public class LevelManager : MonoBehaviour
             case 10:
                 {
                     InitializeLevel3_1();
+                    break;
+                }
+            case 11:
+                {
+                    InitializeLevel3_2();
+                    break;
+                }
+            case 12:
+                {
+                    InitializeLevel3_3();
                     break;
                 }
         }
