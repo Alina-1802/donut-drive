@@ -66,24 +66,29 @@ public class SpawnManager : MonoBehaviour
 
     private void InitializeLevel1_1()
     {
-        locationsNumber = 12;
+        locationsNumber = 17;
         currentLocationsNumber = locationsNumber;
 
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
 
-        spawnLocationsPositions[0] = new Vector3(14.1999998f, 3.81469727e-06f, -114.699997f);
-        spawnLocationsPositions[1] = new Vector3(-12.3999996f, 3.81469727e-06f, -79.3000031f);
-        spawnLocationsPositions[2] = new Vector3(9.69999981f, 3.81469727e-06f, -53.4000015f);
-        spawnLocationsPositions[3] = new Vector3(10.3000002f, 3.81469727e-06f, -1.5f);
-        spawnLocationsPositions[4] = new Vector3(59.4000015f, 3.81469727e-06f, 16.5f);
-        spawnLocationsPositions[5] = new Vector3(98.1999969f, 3.81469727e-06f, 43.0999985f);
-        spawnLocationsPositions[6] = new Vector3(127f, 3.81469727e-06f, 6f);
-        spawnLocationsPositions[7] = new Vector3(145.600006f, 3.81469727e-06f, -29.3999996f);
-        spawnLocationsPositions[8] = new Vector3(145.600006f, 3.81469727e-06f, -89.5f);
-        spawnLocationsPositions[9] = new Vector3(88f, 3.81469727e-06f, -100.699997f);
-        spawnLocationsPositions[10] = new Vector3(23.8999996f, 3.81469727e-06f, -106.599998f);
-        spawnLocationsPositions[11] = new Vector3(0f, 3.81469727e-06f, -135.699997f);
+        spawnLocationsPositions[0] = new Vector3(10.8999996f, 1.21f, -137.699997f);
+        spawnLocationsPositions[1] = new Vector3(2.5f, 1.21f, -111.5f);
+        spawnLocationsPositions[2] = new Vector3(-1.60000002f, 1.21f, -84.3000031f);
+        spawnLocationsPositions[3] = new Vector3(4.4000001f, 1.21f, -55f);
+        spawnLocationsPositions[4] = new Vector3(13.3000002f, 1.21f, -15.8999996f);
+        spawnLocationsPositions[5] = new Vector3(42.9000015f, 1.21f, 3.20000005f);
+        spawnLocationsPositions[6] = new Vector3(78f, 1.21f, 22.7999992f);
+        spawnLocationsPositions[7] = new Vector3(119.699997f, 1.21f, 23.3999996f);
+        spawnLocationsPositions[8] = new Vector3(139.600006f, 1.21f, 3.29999995f);
+        spawnLocationsPositions[9] = new Vector3(148.699997f, 1.21f, -33.5999985f);
+        spawnLocationsPositions[10] = new Vector3(150.800003f, 1.21f, -69.4000015f);
+        spawnLocationsPositions[11] = new Vector3(138.5f, 1.21f, -95.9000015f);
+        spawnLocationsPositions[12] = new Vector3(103f, 1.21f, -102.900002f);
+        spawnLocationsPositions[13] = new Vector3(57.4000015f, 1.21f, -103.900002f);
+        spawnLocationsPositions[14] = new Vector3(26.3999996f, 1.21f, -112.300003f);
+        spawnLocationsPositions[15] = new Vector3(-3.29999995f, 1.21f, -127.800003f);
+        spawnLocationsPositions[16] = new Vector3(6.5999999f, 1.21f, -151f);
     }
 
     private void InitializeLevel1_2()
@@ -94,43 +99,44 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
 
-        spawnLocationsPositions[0] = new Vector3(72.1999969f, 0.00999999978f, -103.099998f);
-        spawnLocationsPositions[1] = new Vector3(21.5f, 0.00999999978f, -113.199997f);
-        spawnLocationsPositions[2] = new Vector3(-27.8999996f, 0.00999999978f, -115.5f);
-        spawnLocationsPositions[3] = new Vector3(-82.3000031f, 0.00999999978f, -113f);
-        spawnLocationsPositions[4] = new Vector3(-116.099998f, 0.00999999978f, -82.0999985f);
-        spawnLocationsPositions[5] = new Vector3(-89.5f, 0.00999999978f, -57.0999985f);
-        spawnLocationsPositions[6] = new Vector3(-58.5999985f, 0.00999999978f, -26.3999996f);
-        spawnLocationsPositions[7] = new Vector3(-6.4000001f, 0.00999999978f, -13.6000004f);
-        spawnLocationsPositions[8] = new Vector3(53f, 0.00999999978f, 6.80000019f);
-        spawnLocationsPositions[9] = new Vector3(60.5f, 0.00999999978f, -29.7000008f);
-        spawnLocationsPositions[10] = new Vector3(58.9000015f, 0.00999999978f, -75.5999985f);
-        spawnLocationsPositions[11] = new Vector3(-2f, 0.00999999978f, -75.5999985f);
-        spawnLocationsPositions[12] = new Vector3(15.3000002f, 0.00999999978f, -113.300003f);
+        spawnLocationsPositions[0] = new Vector3(88.5999985f, 1.21000004f, -102.800003f);
+        spawnLocationsPositions[1] = new Vector3(42f, 1.21000004f, -101.900002f);
+        spawnLocationsPositions[2] = new Vector3(4f, 1.21000004f, -109.199997f);
+        spawnLocationsPositions[3] = new Vector3(-30.1999969f, 1.21000004f, -123f);
+        spawnLocationsPositions[4] = new Vector3(-66f, 1.21000004f, -119.300003f);
+        spawnLocationsPositions[5] = new Vector3(-103.199997f, 1.21000004f, -99.9000015f);
+        spawnLocationsPositions[6] = new Vector3(-88.3000031f, 1.21000004f, -59.4000015f);
+        spawnLocationsPositions[7] = new Vector3(-35.8000031f, 1.21000004f, -26.9000015f);
+        spawnLocationsPositions[8] = new Vector3(-4.19999695f, 1.21000004f, -15.1999969f);
+        spawnLocationsPositions[9] = new Vector3(27.8999996f, 1.21000004f, 9.69999981f);
+        spawnLocationsPositions[10] = new Vector3(57.5999985f, 1.21000004f, -0.200000003f);
+        spawnLocationsPositions[11] = new Vector3(63.9000015f, 1.21000004f, -43.0999985f);
+        spawnLocationsPositions[12] = new Vector3(53f, 1.21000004f, -76.8000031f);
     }
 
     private void InitializeLevel1_3()
     {
-        locationsNumber = 14;
+        locationsNumber = 15;
         currentLocationsNumber = locationsNumber;
 
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
 
-        spawnLocationsPositions[0] = new Vector3(-18.7199993f, -3.81469727e-06f, 110.833702f);
-        spawnLocationsPositions[1] = new Vector3(-12f, -3.81469727e-06f, 53.9000015f);
-        spawnLocationsPositions[2] = new Vector3(-2.20000005f, -3.81469727e-06f, 24.7999992f);
-        spawnLocationsPositions[3] = new Vector3(-25.5f, -3.81469727e-06f, -0.5f);
-        spawnLocationsPositions[4] = new Vector3(-34.2999992f, -3.81469727e-06f, -22.5f);
-        spawnLocationsPositions[5] = new Vector3(-71.9000015f, -3.81469727e-06f, -37.9000015f);
-        spawnLocationsPositions[6] = new Vector3(-64.5f, -3.81469727e-06f, -81.1999969f);
-        spawnLocationsPositions[7] = new Vector3(-8.10000038f, -3.81469727e-06f, -76.9000015f);
-        spawnLocationsPositions[8] = new Vector3(19f, -3.81469727e-06f, -100f);
-        spawnLocationsPositions[9] = new Vector3(37.2999992f, -3.81469727e-06f, -146.100006f);
-        spawnLocationsPositions[10] = new Vector3(83.5f, -3.81469727e-06f, -178.899994f);
-        spawnLocationsPositions[11] = new Vector3(139.800003f, -3.81469727e-06f, -155.600006f);
-        spawnLocationsPositions[12] = new Vector3(118.5f, -3.81469727e-06f, -102.5f);
-        spawnLocationsPositions[13] = new Vector3(89.5f, -3.81469727e-06f, -76.0999985f);
+        spawnLocationsPositions[0] = new Vector3(-19.5f, 1.20999908f, 106.099998f);
+        spawnLocationsPositions[1] = new Vector3(-12.5999985f, 1.20999908f, 52.5f);
+        spawnLocationsPositions[2] = new Vector3(-19.0999985f, 1.20999908f, 8.5f);
+        spawnLocationsPositions[3] = new Vector3(-37.0999985f, 1.20999908f, -23.7000008f);
+        spawnLocationsPositions[4] = new Vector3(-72.9000015f, 1.20999908f, -38.5999985f);
+        spawnLocationsPositions[5] = new Vector3(-86.3000031f, 1.20999908f, -67.1999969f);
+        spawnLocationsPositions[6] = new Vector3(-49.0999985f, 1.20999908f, -79.6999969f);
+        spawnLocationsPositions[7] = new Vector3(-7.5f, 1.20999908f, -85.8000031f);
+        spawnLocationsPositions[8] = new Vector3(26.2999992f, 1.20999908f, -115.900002f);
+        spawnLocationsPositions[9] = new Vector3(61.2000008f, 1.20999908f, -157.600006f);
+        spawnLocationsPositions[10] = new Vector3(105.199997f, 1.20999908f, -172.899994f);
+        spawnLocationsPositions[11] = new Vector3(133.5f, 1.20999908f, -143.5f);
+        spawnLocationsPositions[12] = new Vector3(129.100006f, 1.20999908f, -105.699997f);
+        spawnLocationsPositions[13] = new Vector3(117.400002f, 1.20999908f, -67.6999969f);
+        spawnLocationsPositions[14] = new Vector3(79.8000031f, 1.20999908f, -45.4000015f);
     }
 
     private void InitializeLevel1_4()
@@ -141,11 +147,11 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
 
-        spawnLocationsPositions[0] = new Vector3(12.6999998f, 0.00999999978f, -15.8000002f);
-        spawnLocationsPositions[1] = new Vector3(89.8000031f, 0.00999999978f, -63.5f);
-        spawnLocationsPositions[2] = new Vector3(-3.5f, 0.00999999978f, -136.800003f);
-        spawnLocationsPositions[3] = new Vector3(-31.7999992f, 0.00999999978f, 39.7999992f);
-        spawnLocationsPositions[4] = new Vector3(63.7000008f, 0.00999999978f, 88.1999969f);
+        spawnLocationsPositions[0] = new Vector3(12.6999998f, 1.20999908f, -15.8000002f);
+        spawnLocationsPositions[1] = new Vector3(89.8000031f, 1.20999908f, -63.5f);
+        spawnLocationsPositions[2] = new Vector3(-3.5f, 1.20999908f, -136.800003f);
+        spawnLocationsPositions[3] = new Vector3(-31.7999992f, 1.20999908f, 39.7999992f);
+        spawnLocationsPositions[4] = new Vector3(63.7000008f, 1.20999908f, 88.1999969f);
     }
 
     private void InitializeLevel1_5()
@@ -156,17 +162,17 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
 
-        spawnLocationsPositions[0] = new Vector3(-11.8999996f, 0.0199999996f, -80.4000015f);
-        spawnLocationsPositions[1] = new Vector3(30.7000008f, 0.0199999996f, -71.6999969f);
-        spawnLocationsPositions[2] = new Vector3(62.2000008f, 0.0199999996f, -49.5f);
-        spawnLocationsPositions[3] = new Vector3(105.400002f, 0.0199999996f, -50.2999992f);
-        spawnLocationsPositions[4] = new Vector3(140.5f, 0.0199999996f, -70.6999969f);
-        spawnLocationsPositions[5] = new Vector3(125.5f, 0.0199999996f, -94.0999985f);
-        spawnLocationsPositions[6] = new Vector3(71.5f, 0.0199999996f, -101.199997f);
-        spawnLocationsPositions[7] = new Vector3(44.5999985f, 0.0199999996f, -145.399994f);
-        spawnLocationsPositions[8] = new Vector3(-1f, 0.0199999996f, -152.800003f);
-        spawnLocationsPositions[9] = new Vector3(-3.29999995f, 0.0199999996f, -86.3000031f);
-        spawnLocationsPositions[9] = new Vector3(12.8999996f, 0.0199999996f, -49.7999992f);
+        spawnLocationsPositions[0] = new Vector3(-11.8999996f, 1.20999908f, -80.4000015f);
+        spawnLocationsPositions[1] = new Vector3(30.7000008f, 1.20999908f, -71.6999969f);
+        spawnLocationsPositions[2] = new Vector3(62.2000008f, 1.20999908f, -49.5f);
+        spawnLocationsPositions[3] = new Vector3(105.400002f, 1.20999908f, -50.2999992f);
+        spawnLocationsPositions[4] = new Vector3(140.5f, 1.20999908f, -70.6999969f);
+        spawnLocationsPositions[5] = new Vector3(125.5f, 1.20999908f, -94.0999985f);
+        spawnLocationsPositions[6] = new Vector3(71.5f, 1.20999908f, -101.199997f);
+        spawnLocationsPositions[7] = new Vector3(44.5999985f, 1.20999908f, -145.399994f);
+        spawnLocationsPositions[8] = new Vector3(-1f, 1.20999908f, -152.800003f);
+        spawnLocationsPositions[9] = new Vector3(-3.29999995f, 1.20999908f, -86.3000031f);
+        spawnLocationsPositions[9] = new Vector3(12.8999996f, 1.20999908f, -49.7999992f);
     }
 
     private void InitializeLevel2_1()

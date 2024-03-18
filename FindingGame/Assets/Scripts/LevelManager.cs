@@ -85,17 +85,17 @@ public class LevelManager : MonoBehaviour
 
     private void InitializeLevel1_1()
     {
-        levelTime = 30.0f;
+        levelTime = 25.0f;
     }
 
     private void InitializeLevel1_2()
     {
-        levelTime = 30.0f;
+        levelTime = 20.0f;
     }
 
     private void InitializeLevel1_3()
     {
-        levelTime = 25.0f;
+        levelTime = 20.0f;
     }
 
     private void InitializeLevel1_4()
@@ -105,7 +105,7 @@ public class LevelManager : MonoBehaviour
 
     private void InitializeLevel1_5()
     {
-        levelTime = 25.0f;
+        levelTime = 20.0f;
     }
 
     private void InitializeLevel2_1()
@@ -122,11 +122,11 @@ public class LevelManager : MonoBehaviour
     }
     private void InitializeLevel2_4()
     {
-        levelTime = 70.0f;
+        levelTime = 50.0f;
     }
     private void InitializeLevel2_5()
     {
-        levelTime = 70.0f;
+        levelTime = 45.0f;
     }
     private void InitializeLevel3_1()
     {
