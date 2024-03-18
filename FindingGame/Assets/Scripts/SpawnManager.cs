@@ -264,14 +264,6 @@ public class SpawnManager : MonoBehaviour
 
         spawnLocationsPositions = null;
         spawnLocationsPositions = new Vector3[locationsNumber];
-        spawnLocationsPositions[0] = new Vector3(63.4940834f, 0.015f, 30.7000008f);
-        spawnLocationsPositions[1] = new Vector3(133.5f, 0.015f, 111.900002f);
-        spawnLocationsPositions[2] = new Vector3(194.300003f, 0.02f, -28.1000004f);
-        spawnLocationsPositions[3] = new Vector3(134.199997f, 0.015f, -120.300003f);
-        spawnLocationsPositions[4] = new Vector3(-52.7000008f, 0.02f, -128.699997f);
-        spawnLocationsPositions[5] = new Vector3(-134.899994f, 0.015f, 18.1000004f);
-        spawnLocationsPositions[6] = new Vector3(63.4000015f, 0.015f, 11.5f);
-        spawnLocationsPositions[7] = new Vector3(63.4000015f, 0.015f, -125.099998f);
         spawnLocationsPositions[0] = new Vector3(67f, 1.21000004f, -59.4000015f);
         spawnLocationsPositions[1] = new Vector3(63.5f, 1.21000004f, 11.3999996f);
         spawnLocationsPositions[2] = new Vector3(63.2999992f, 1.21000004f, 72.4000015f);
