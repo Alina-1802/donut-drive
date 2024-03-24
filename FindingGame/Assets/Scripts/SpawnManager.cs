@@ -317,6 +317,30 @@ public class SpawnManager : MonoBehaviour
         spawnLocationsPositions[8] = new Vector3(183.899994f, 1.21000004f, -28.8999996f);
     }
 
+    private void InitializeLevel3_4()
+    {
+        locationsNumber = 14;
+        currentLocationsNumber = locationsNumber;
+
+        spawnLocationsPositions = null;
+        spawnLocationsPositions = new Vector3[locationsNumber];
+
+        spawnLocationsPositions[0] = new Vector3(63f, 1.21000004f, 32.2999992f);
+        spawnLocationsPositions[1] = new Vector3(71.0999985f, 1.21000004f, -22.5f);
+        spawnLocationsPositions[2] = new Vector3(86.1999969f, 1.21000004f, -36.0999985f);
+        spawnLocationsPositions[3] = new Vector3(113.900002f, 1.21000004f, -38.2000008f);
+        spawnLocationsPositions[4] = new Vector3(146.899994f, 1.21000004f, -36.4000015f);
+        spawnLocationsPositions[5] = new Vector3(192.699997f, 1.21000004f, -42.0999985f);
+        spawnLocationsPositions[6] = new Vector3(205.600006f, 1.21000004f, -76.1999969f);
+        spawnLocationsPositions[7] = new Vector3(188.899994f, 1.21000004f, -132.600006f);
+        spawnLocationsPositions[8] = new Vector3(157.199997f, 1.21000004f, -120.900002f);
+        spawnLocationsPositions[9] = new Vector3(137.199997f, 1.21000004f, -97.6999969f);
+        spawnLocationsPositions[10] = new Vector3(101.699997f, 1.21000004f, -101.5f);
+        spawnLocationsPositions[11] = new Vector3(70.3000031f, 1.21000004f, -124.199997f);
+        spawnLocationsPositions[12] = new Vector3(26.5f, 1.21000004f, -134.899994f);
+        spawnLocationsPositions[13] = new Vector3(-43.7999992f, 1.21000004f, -118.800003f);
+
+    }
     private void InitializeCurrentLevel()
     {
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
@@ -386,6 +410,11 @@ public class SpawnManager : MonoBehaviour
             case 12:
                 {
                     InitializeLevel3_3();
+                    break;
+                }
+            case 13:
+                {
+                    InitializeLevel3_4();
                     break;
                 }
         }
