@@ -220,6 +220,16 @@ public class LevelManager : MonoBehaviour
                     InitializeLevel3_3();
                     break;
                 }
+            case 13:
+                {
+                    InitializeLevel3_4();
+                    break;
+                }
+            case 14:
+                {
+                    InitializeLevel3_5();
+                    break;
+                }
         }
     }
 
