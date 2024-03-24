@@ -1680,8 +1680,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 230
-  m_fontSizeBase: 230
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1811,8 +1811,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2038,8 +2038,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2312504020664469908}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2210,8 +2210,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2317,8 +2317,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2451,8 +2451,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2625,8 +2625,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2719,8 +2719,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -2880,8 +2880,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -3122,8 +3122,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -3709,8 +3709,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -4812,8 +4812,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -5657,8 +5657,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -5873,8 +5873,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -6148,6 +6148,7 @@ MonoBehaviour:
   levelsPanel: {fileID: 2312504020489892854}
   settingsPanel: {fileID: 1953509863}
   activePanels: []
+  currentLevelIndex: 0
 --- !u!1 &6978009792588820238
 GameObject:
   m_ObjectHideFlags: 0
@@ -6253,8 +6254,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:
@@ -6390,6 +6391,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768965463284621258}
   m_CullTransparentMesh: 1
+--- !u!1001 &7976445073272295815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 982.19727
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 518.61273
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.635498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939973, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976445072955939975, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88da7f4242b4fce4bacf0a0c6c435a73, type: 3}
 --- !u!114 &7998380160959653490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6621,8 +6679,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+      - m_Target: {fileID: 6827160929222263111}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: PlaySpecificLevel
         m_Mode: 2
         m_Arguments:

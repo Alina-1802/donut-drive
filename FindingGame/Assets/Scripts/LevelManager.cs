@@ -15,11 +15,14 @@ public class LevelManager : MonoBehaviour
 
     private SpawnManager spawnManager;
     private UI ui;
+    private GameManager gameManager;
+
 
     void Start()
     {
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         ui = GameObject.Find("UI").GetComponent<UI>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         isTimeUp = false;
         isLevelWon = null;
@@ -69,6 +72,7 @@ public class LevelManager : MonoBehaviour
         else if (!isTimeUp && isLevelCompleted)
         {
             isLevelWon = true;
+            gameManager.IncreaseCompletedLevelsNumber();
             Debug.Log("You won!");
         }
     }

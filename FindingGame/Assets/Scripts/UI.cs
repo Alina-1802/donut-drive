@@ -173,7 +173,6 @@ public class UI : MonoBehaviour
     {
         string stringSceneNumber = button.GetComponentInChildren<TextMeshProUGUI>().text;
         int sceneNumber = Int32.Parse(stringSceneNumber);
-        Debug.Log(sceneNumber);
 
         SceneManager.LoadScene(sceneNumber - 1);
     }
