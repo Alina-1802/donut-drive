@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 5608954998611645407, guid: 26089c9432d266a4aafa7b29b0a8cf07, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5633627598488593767, guid: 26089c9432d266a4aafa7b29b0a8cf07, type: 3}
       propertyPath: m_Enabled
       value: 1

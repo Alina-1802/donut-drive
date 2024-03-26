@@ -1171,7 +1171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1853813522222136902
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1998,7 +1998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -117}
+  m_AnchoredPosition: {x: 6, y: -90}
   m_SizeDelta: {x: 728.7556, y: 113.4895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &242999255239487662
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Choose level
+  m_text: Levels
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 08fff3af008a32446be508f3fb493203, type: 2}
   m_sharedMaterial: {fileID: 6168707164063220997, guid: 08fff3af008a32446be508f3fb493203, type: 2}
@@ -5400,7 +5400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 26}
+  m_AnchoredPosition: {x: 17, y: 53}
   m_SizeDelta: {x: 522.6641, y: 118.5998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2208665650105006361
@@ -5616,8 +5616,9 @@ MonoBehaviour:
   mainPanel: {fileID: 4156184412920113242}
   levelsPanel: {fileID: 4156184414719446628}
   settingsPanel: {fileID: 1853813522137894005}
+  nextLevelButton: {fileID: 0}
   activePanels: []
-  currentLevelIndex: 0
+  gameManager: {fileID: 0}
 --- !u!1 &7405359050857267770
 GameObject:
   m_ObjectHideFlags: 0
