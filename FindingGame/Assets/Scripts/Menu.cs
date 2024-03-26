@@ -13,15 +13,16 @@ public class Menu : MonoBehaviour
     public GameObject levelsPanel;
     public GameObject settingsPanel;
 
+    public GameObject nextLevelButton;
+
     public List<GameObject> activePanels = new List<GameObject>();
 
-    GameManager gameManager;
-    public int currentLevelIndex = 0;
+    public GameManager gameManager;
+
+    static int currentLevelIndex = 1;
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
         ActivatePanel(mainPanel);
 
         levelsPanel.SetActive(false);
@@ -54,12 +55,32 @@ public class Menu : MonoBehaviour
 
             if (int.TryParse(text, out int number))
             {
-                if (number - 1 <= currentLevelIndex)
+                if (number <= currentLevelIndex)
                 {
                     obj.GetComponent<Button>().enabled = true;
                 }
             }
         }
+    }
+
+    public bool CheckNextLevelButtonActivation()
+    {
+        Debug.Log(gameManager.GetNumberCompletedLevels() + " = liczba completed levels");
+        if (gameManager.GetNumberCompletedLevels() > SceneManager.GetActiveScene().buildIndex - 1)
+        {
+            Debug.Log("TO sie wynokuje");
+            return true;
+        }
+        else
+        {
+            Debug.Log("TO sie wynokuje 2");
+            return false;
+        }
+    }
+
+    public void ActivateNextLevelButton()
+    {
+        nextLevelButton.SetActive(true);
     }
 
     public void ChooseLevel()
@@ -75,7 +96,7 @@ public class Menu : MonoBehaviour
         string stringSceneNumber = button.GetComponentInChildren<TextMeshProUGUI>().text;
         int sceneNumber = Int32.Parse(stringSceneNumber);
 
-        SceneManager.LoadScene(sceneNumber - 1);
+        SceneManager.LoadScene(sceneNumber);
     }
 
 
@@ -113,4 +134,28 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void PlayNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void IncreaseCurrentLevelIndex()
+    {
+        currentLevelIndex++;
+    }
+
+    public int GetCurrentLevelIndex()
+    {
+        return currentLevelIndex;
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

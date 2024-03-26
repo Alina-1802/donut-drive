@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if((levelManager.GetIsLevelWon() == null) && (Time.timeSinceLevelLoad > levelManager.GetCountingOffset()) &&  (!ui.GetIsGamePaused()))
+        if((levelManager.GetIsLevelWon() == null) && (levelManager.GetCurrentTime() > levelManager.GetCountingOffset()) &&  (!ui.GetIsGamePaused()))
         {
             MovePlayer();
         }
@@ -61,7 +60,6 @@ public class PlayerController : MonoBehaviour
             isLocationFound = true;
             Destroy(other.gameObject);
             locationSound.Play();
-            Debug.Log("Location found");
         }
         else if (other.gameObject.CompareTag("Water"))
         {

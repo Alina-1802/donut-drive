@@ -159,77 +159,77 @@ public class LevelManager : MonoBehaviour
 
         switch (currentLevelIndex)
         {
-            case 0:
+            case 1:
                 {
                     InitializeLevel1_1();
                     break;
                 }
-            case 1:
+            case 2:
                 {
                     InitializeLevel1_2();
                     break;
                 }
-            case 2:
+            case 3:
                 {
                     InitializeLevel1_3();
                     break;
                 }
-            case 3:
+            case 4:
                 {
                     InitializeLevel1_4();
                     break;
                 }
-            case 4:
+            case 5:
                 {
                     InitializeLevel1_5();
                     break;
                 }
-            case 5:
+            case 6:
                 {
                     InitializeLevel2_1();
                     break;
                 }
-            case 6:
+            case 7:
                 {
                     InitializeLevel2_2();
                     break;
                 }
-            case 7:
+            case 8:
                 {
                     InitializeLevel2_3();
                     break;
                 }
-            case 8:
+            case 9:
                 {
                     InitializeLevel2_4();
                     break;
                 }
-            case 9:
+            case 10:
                 {
                     InitializeLevel2_5();
                     break;
                 }
-            case 10:
+            case 11:
                 {
                     InitializeLevel3_1();
                     break;
                 }
-            case 11:
+            case 12:
                 {
                     InitializeLevel3_2();
                     break;
                 }
-            case 12:
+            case 13:
                 {
                     InitializeLevel3_3();
                     break;
                 }
-            case 13:
+            case 14:
                 {
                     InitializeLevel3_4();
                     break;
                 }
-            case 14:
+            case 15:
                 {
                     InitializeLevel3_5();
                     break;
@@ -242,5 +242,8 @@ public class LevelManager : MonoBehaviour
         return countingOffset;
     }
 
-
+    public float GetLeftTime()
+    {
+        return levelTime - currentTime;
+    }
 }

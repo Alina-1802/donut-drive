@@ -13,15 +13,15 @@ public class UI : MonoBehaviour
     public GameObject levelWon;
     public GameObject levelLost;
     public GameObject pauseText;
+    public GameObject menu;
 
     public TextMeshProUGUI locationsNumber;
     public TextMeshProUGUI counting;
 
-    public GameObject pauseMenu;
-    public GameObject levelsPanel;
-
     private LevelManager levelManager;
     private SpawnManager spawnManager;
+
+    private Menu menuScript;
 
     private bool isGamePaused = false;
     private bool firstPressing = true;
@@ -30,13 +30,11 @@ public class UI : MonoBehaviour
     {
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        menuScript = menu.GetComponent<Menu>();
 
         levelWon.SetActive(false);
         levelLost.SetActive(false);
         pauseText.SetActive(true);
-
-        pauseMenu.SetActive(false);
-        levelsPanel.SetActive(false);
 
         counting.gameObject.SetActive(true);
         counting.text = string.Empty;
@@ -44,6 +42,7 @@ public class UI : MonoBehaviour
 
     void Update()
     {
+
         if (isGamePaused == false)
         {
             if (levelManager.GetCurrentTime() <= 3)
@@ -59,8 +58,23 @@ public class UI : MonoBehaviour
                 if (levelManager.GetIsLevelWon() != null)
                 {
                     ShowGameOver();
-                    pauseMenu.SetActive(true);
+                    menu.SetActive(true);
+                    menuScript.mainPanel.SetActive(true);
                     isGamePaused = true;
+
+                    if (levelManager.GetIsLevelWon() == true)
+                    {
+                        menuScript.ActivateNextLevelButton();
+
+                        if(menuScript.GetCurrentLevelIndex() == SceneManager.GetActiveScene().buildIndex)
+                        {
+                            menuScript.IncreaseCurrentLevelIndex();
+                        }
+                    }
+                    else if(levelManager.GetIsLevelWon() == false && (menuScript.GetCurrentLevelIndex() > SceneManager.GetActiveScene().buildIndex))
+                    {
+                        menuScript.ActivateNextLevelButton();
+                    }
                 }
             }
         }
@@ -69,34 +83,40 @@ public class UI : MonoBehaviour
         {
             Application.Quit();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null && !levelsPanel.activeSelf)
+        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null && !menuScript.levelsPanel.activeSelf)
         {
             if (firstPressing)
             {
                 isGamePaused = true;
                 firstPressing = false;
-                pauseMenu.SetActive(true);
+                menuScript.mainPanel.SetActive(true);
+                menu.SetActive(true);
+                counting.gameObject.SetActive(false);
 
+                if(menuScript.CheckNextLevelButtonActivation() == true)
+                {
+                    menuScript.ActivateNextLevelButton();
+                }
             }
             else
             {
                 isGamePaused = false;
                 firstPressing = true;
-                pauseMenu.SetActive(false);
+                menuScript.mainPanel.SetActive(false);
+                menu.SetActive(false);
+                counting.gameObject.SetActive(true);
             }
         }
     }
 
     private void ShowTimer()
     {
-        float currentTime = levelManager.GetCurrentTime();
-        if(currentTime <= 0f)
-        {
-            currentTime = 0f;
-        }
+        float leftTime = levelManager.GetLeftTime();
 
-        float levelTime = levelManager.GetLevelTime();
-        float leftTime = levelTime - currentTime;
+        if (leftTime <= 0f)
+        {
+            leftTime = 0f;
+        }
         timer.text = leftTime.ToString("F2") + " s";
     }
 
@@ -136,44 +156,14 @@ public class UI : MonoBehaviour
         {
             counting.text = time[2];
         }
+        else
+        {
+            counting.text = String.Empty;
+        }
     }
 
-    public void RetryLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void PlayNextLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
     public bool GetIsGamePaused()
     {
         return isGamePaused;
-    }
-
-    public void ShowLevels()
-    {
-        pauseMenu.SetActive(false);
-        levelsPanel.SetActive(true);
-    }
-
-    public void BackToPauseMenu()
-    {
-        levelsPanel.SetActive(false);
-        pauseMenu.SetActive(true);
-    }
-
-    public void PlaySpecificLevel(GameObject button)
-    {
-        string stringSceneNumber = button.GetComponentInChildren<TextMeshProUGUI>().text;
-        int sceneNumber = Int32.Parse(stringSceneNumber);
-
-        SceneManager.LoadScene(sceneNumber - 1);
     }
 }

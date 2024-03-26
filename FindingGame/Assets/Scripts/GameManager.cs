@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    int numberCompletedLevels = 0;
+    public static int numberCompletedLevels = 0;
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     }
 
     public int GetNumberCompletedLevels()
-    { 
+    {
         return numberCompletedLevels; 
     }
 }
