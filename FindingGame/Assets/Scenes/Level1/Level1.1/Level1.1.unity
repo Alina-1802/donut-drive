@@ -1774,10 +1774,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5266794853197163876, guid: 033ac57ddd10c8740acb051caae76e11, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5266794853197163877, guid: 033ac57ddd10c8740acb051caae76e11, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1900,10 +1896,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 167244377}
-    - target: {fileID: 8255428815306655305, guid: f15a9b47fa9218e4aa970dbddf34b3f6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 8393224741289572056, guid: f15a9b47fa9218e4aa970dbddf34b3f6, type: 3}
       propertyPath: m_Name
       value: UI
