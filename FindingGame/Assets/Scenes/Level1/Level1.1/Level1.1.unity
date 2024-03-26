@@ -1900,6 +1900,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 167244377}
+    - target: {fileID: 8255428815306655305, guid: f15a9b47fa9218e4aa970dbddf34b3f6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 8393224741289572056, guid: f15a9b47fa9218e4aa970dbddf34b3f6, type: 3}
       propertyPath: m_Name
       value: UI
