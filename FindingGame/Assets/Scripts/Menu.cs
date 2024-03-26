@@ -65,15 +65,12 @@ public class Menu : MonoBehaviour
 
     public bool CheckNextLevelButtonActivation()
     {
-        Debug.Log(gameManager.GetNumberCompletedLevels() + " = liczba completed levels");
         if (gameManager.GetNumberCompletedLevels() > SceneManager.GetActiveScene().buildIndex - 1)
         {
-            Debug.Log("TO sie wynokuje");
             return true;
         }
         else
         {
-            Debug.Log("TO sie wynokuje 2");
             return false;
         }
     }

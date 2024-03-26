@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(numberCompletedLevels);
+
     }
 
     public void IncreaseCompletedLevelsNumber()

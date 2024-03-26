@@ -67,13 +67,11 @@ public class LevelManager : MonoBehaviour
         if (isTimeUp && !isLevelCompleted)
         {
             isLevelWon = false;
-            Debug.Log("You lost!");
         }
         else if (!isTimeUp && isLevelCompleted)
         {
             isLevelWon = true;
             gameManager.IncreaseCompletedLevelsNumber();
-            Debug.Log("You won!");
         }
     }
 
