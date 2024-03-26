@@ -536,6 +536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9126923524498512339}
     m_Modifications:
+    - target: {fileID: 2330208611942532034, guid: 78fea2d5fda285948948feaba43c8ef9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 6089881793176441225, guid: 78fea2d5fda285948948feaba43c8ef9, type: 3}
       propertyPath: m_Name
       value: Menu
