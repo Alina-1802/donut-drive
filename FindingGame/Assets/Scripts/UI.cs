@@ -147,7 +147,7 @@ public class UI : MonoBehaviour
 
     private void ShowCounting()
     {
-        string[] time = { "3", "2", "1" };
+        string[] time = { "3", "2", "1", "GO"};
 
         if(levelManager.GetCurrentTime() < 1)
         {
@@ -180,6 +180,10 @@ public class UI : MonoBehaviour
             {
                 sounds.PlayCount3Sound();
             }
+        }
+        else if (levelManager.GetCurrentTime() >= 3 && levelManager.GetCurrentTime() < 4)
+        {
+            counting.text = time[3];
         }
         else
         {
