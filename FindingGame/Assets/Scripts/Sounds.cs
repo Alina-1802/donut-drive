@@ -6,6 +6,9 @@ public class Sounds : MonoBehaviour
 {
     public AudioSource levelWonSound;
     public AudioSource levelLostSound;
+    public AudioSource count1Sound;
+    public AudioSource count2Sound;
+    public AudioSource count3Sound;
 
     PlayerController playerController;
     LevelManager levelManager;
@@ -20,7 +23,6 @@ public class Sounds : MonoBehaviour
     
     void Update()
     {
-
         if (levelManager.GetIsLevelWon() ==  true && hasPlayed == false)
         {
             levelWonSound.Play();
@@ -31,5 +33,19 @@ public class Sounds : MonoBehaviour
             levelLostSound.Play();
             hasPlayed = true;
         }
+    }
+
+    public void PlayCount1Sound()
+    {
+        count1Sound.Play();
+    }
+    public void PlayCount2Sound()
+    {
+        count2Sound.Play();
+    }
+
+    public void PlayCount3Sound()
+    {
+        count3Sound.Play();
     }
 }

@@ -20,16 +20,21 @@ public class UI : MonoBehaviour
 
     private LevelManager levelManager;
     private SpawnManager spawnManager;
+    private Sounds sounds;
 
     private Menu menuScript;
 
     private bool isGamePaused = false;
     private bool firstPressing = true;
 
+    bool hasPlayed1, hasPlayed2, hasPlayed3 = false;
+
     void Start()
     {
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        sounds = GameObject.Find("SoundsManager").GetComponent<Sounds>();
+
         menuScript = menu.GetComponent<Menu>();
 
         levelWon.SetActive(false);
@@ -45,7 +50,7 @@ public class UI : MonoBehaviour
 
         if (isGamePaused == false)
         {
-            if (levelManager.GetCurrentTime() <= 3)
+            if (levelManager.GetCurrentTime() <= 4)
             {
                 ShowCounting();
             }
@@ -83,7 +88,7 @@ public class UI : MonoBehaviour
         {
             Application.Quit();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null && !menuScript.levelsPanel.activeSelf)
+        else if (Input.GetKeyDown(KeyCode.Escape) && levelManager.GetIsLevelWon() == null && !menuScript.levelsPanel.activeSelf && !menuScript.settingsPanel.activeSelf)
         {
             if (firstPressing)
             {
@@ -144,17 +149,37 @@ public class UI : MonoBehaviour
     {
         string[] time = { "3", "2", "1" };
 
-        if(levelManager.GetCurrentTime() <= 1)
+        if(levelManager.GetCurrentTime() < 1)
         {
+            if(hasPlayed1 == false)
+            {
+                sounds.PlayCount1Sound();
+                hasPlayed1 = true;
+            }
             counting.text = time[0];
         }
-        else if(levelManager.GetCurrentTime() > 1 && levelManager.GetCurrentTime() <= 2)
+        else if(levelManager.GetCurrentTime() >= 1 && levelManager.GetCurrentTime() < 2)
         {
+            if (hasPlayed2 == false)
+            {
+                sounds.PlayCount2Sound();
+                hasPlayed2 = true;
+            }
             counting.text = time[1];
         }
-        else if(levelManager.GetCurrentTime() >= 2 && levelManager.GetCurrentTime() <= 3)
+        else if(levelManager.GetCurrentTime() >= 2 && levelManager.GetCurrentTime() < 3)
         {
+            if (hasPlayed3 == false)
+            {
+                sounds.PlayCount1Sound();
+                hasPlayed3 = true;
+            }
             counting.text = time[2];
+
+            if (levelManager.GetCurrentTime() >= 2.8 && levelManager.GetCurrentTime() <= 3)
+            {
+                sounds.PlayCount3Sound();
+            }
         }
         else
         {
