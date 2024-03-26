@@ -67,7 +67,7 @@ public class UI : MonoBehaviour
                     menuScript.mainPanel.SetActive(true);
                     isGamePaused = true;
 
-                    if (levelManager.GetIsLevelWon() == true)
+                    if (levelManager.GetIsLevelWon() == true && menuScript.GetCurrentLevelIndex() < 15)
                     {
                         menuScript.ActivateNextLevelButton();
 
