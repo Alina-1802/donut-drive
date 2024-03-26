@@ -9,6 +9,7 @@ public class Sounds : MonoBehaviour
     public AudioSource count1Sound;
     public AudioSource count2Sound;
     public AudioSource count3Sound;
+    public AudioSource levelMusic;
 
     PlayerController playerController;
     LevelManager levelManager;
@@ -19,6 +20,8 @@ public class Sounds : MonoBehaviour
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         levelManager = GameObject.Find("LevelManager").GetComponent <LevelManager>();
+
+        levelMusic.volume = 0.3f;
     }
     
     void Update()
