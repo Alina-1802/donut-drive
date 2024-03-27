@@ -154,6 +154,7 @@ public class LevelManager : MonoBehaviour
     private void InitializeCurrentLevel()
     {
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        ui.SetLevelNumberText(currentLevelIndex);
 
         switch (currentLevelIndex)
         {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ public class UI : MonoBehaviour
     public GameObject levelWon;
     public GameObject levelLost;
     public GameObject pauseText;
+    public GameObject levelNumber;
     public GameObject menu;
 
     public TextMeshProUGUI locationsNumber;
@@ -40,6 +42,7 @@ public class UI : MonoBehaviour
         levelWon.SetActive(false);
         levelLost.SetActive(false);
         pauseText.SetActive(true);
+        levelNumber.SetActive(true);
 
         counting.gameObject.SetActive(true);
         counting.text = string.Empty;
@@ -47,7 +50,6 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-
         if (isGamePaused == false)
         {
             if (levelManager.GetCurrentTime() <= 4)
@@ -194,5 +196,15 @@ public class UI : MonoBehaviour
     public bool GetIsGamePaused()
     {
         return isGamePaused;
+    }
+
+    public void SetLevelNumberText(int number)
+    {
+        string text = levelNumber.GetComponent<TextMeshProUGUI>().text;
+
+        text = text.Substring(0, text.Length - 1);
+        text += number.ToString();
+
+        levelNumber.GetComponent<TextMeshProUGUI>().text = text;
     }
 }
