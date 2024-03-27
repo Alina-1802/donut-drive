@@ -52,12 +52,13 @@ public class UI : MonoBehaviour
     {
         if (isGamePaused == false)
         {
-            if (levelManager.GetCurrentTime() <= 4)
+            if (levelManager.GetCurrentTime() < 4)
             {
                 ShowCounting();
             }
             else
             {
+                counting.text = String.Empty;
                 counting.gameObject.SetActive(false);
                 ShowTimer();
                 ShowLocationsNumber();
@@ -186,10 +187,6 @@ public class UI : MonoBehaviour
         else if (levelManager.GetCurrentTime() >= 3 && levelManager.GetCurrentTime() < 4)
         {
             counting.text = time[3];
-        }
-        else
-        {
-            counting.text = String.Empty;
         }
     }
 
